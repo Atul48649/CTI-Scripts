@@ -1,10 +1,9 @@
 const LoginPage = require('../pages/login.page');
+const SetPinPage = require('../pages/setpin.page');
 const LoginWithPinPage = require('../pages/loginwithpin.page');
+const StudentDashboard = require('../pages/studentdashboard.page');
 
 describe('Login page', () => {
-    beforeEach(() => {
-        
-    });
     it('Should open the url and verify the title', () => {
         LoginPage.open();
         expect(browser).toHaveTitle('CTI');
@@ -93,20 +92,48 @@ describe('Login page', () => {
     //     browser.pause(5000);
     // });
 
-    // When try to login again we should get credentials prefilled becuse we marked Remember Me as checked
-    it('Student should get Sign Out', () => {
-        LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
-        LoginPage.passwordInput.addValue('5001');
+    // Login and haven't set the Pin earlier Login>Set Pin>Login With Pin>Sign Out
+    // it('Login and setting Pin', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('0423481105');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.checkboxInput.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    //     StudentDashboard.signOutBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    // });
+
+    // Login and haven't set the Pin earlier Login>Skip>Sign Out
+    it('Login and setting Pin', () => {
+        LoginPage.emailOrPhoneInput.addValue('0423481105');
+        LoginPage.passwordInput.addValue('12345');
         LoginPage.checkboxInput.click();
-        LoginPage.loginBtn.click();
-        LoginPage.pinInput.addValue('6001');
-        LoginPage.verifyPinBtn.click();
-        LoginPage.signOutBtn.click();
+        SetPinPage.skip.click();
+        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+        StudentDashboard.signOutBtn.click();
         expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
-        browser.pause(5000);
     });
 
+    // When try to login again we should get credentials prefilled becuse we marked Remember Me as checked
+    // it('Student should get Sign Out', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
+    //     LoginPage.passwordInput.addValue('5001');
+    //     LoginPage.checkboxInput.click();
+    //     LoginPage.loginBtn.click();
+    //     LoginWithPinPage.pinInput.addValue('6001');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     StudentDashboard.signOutBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    //     browser.pause(5000);
+    // });
 
+
+    //  Not so imp test script
     //  When entering valid login credentials and marking remember me as checked
     // it('User gets login and after sign out their credentials should be prefilled when go to Login page', () => {
     //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
@@ -116,6 +143,7 @@ describe('Login page', () => {
     //     browser.pause(10000);
     // });
 
+    // Not so imp test script
     // it('checkbox should get checked', () => {
     //     LoginPage.checkboxInput.click();
     //     browser.pause(10000);
@@ -126,6 +154,6 @@ describe('Login page', () => {
     //     LoginPage.forgotPassword.click();
     //     browser.pause(5000);
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/user/user/forgot');
-    //     browser.pause(15000);
+    //     browser.pause(5000);
     // });
 });

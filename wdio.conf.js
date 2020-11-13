@@ -1,7 +1,7 @@
 exports.config = {
     //
     // ====================
-    // Runner Configuration [
+    // Runner Configuration 
     // ====================
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
@@ -17,7 +17,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/signup.js'
+        './test/specs/**/login.js'
     ],
     // Patterns to exclude.
     exclude: [

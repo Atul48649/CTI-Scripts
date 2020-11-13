@@ -17,9 +17,9 @@ class LoginWithPinPage extends Page {
         return $('#pinHelp');
     }
 
-    get signOutBtn(){
-        return $('.halfBtn');
-    }
+    // get signOutBtn(){
+    //     return $('.halfBtn');
+    // }
 }
 
 module.exports = new LoginWithPinPage();

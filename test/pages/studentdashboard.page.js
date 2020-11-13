@@ -1,4 +1,5 @@
-class StudentDashboard{
+const Page = require('./page');
+class StudentDashboard extends Page{
     
     get signOutBtn(){
         return $('.halfBtn');
