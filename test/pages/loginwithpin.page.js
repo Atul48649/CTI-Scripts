@@ -1,9 +1,6 @@
 const Page = require('./page');
-class LoginWithPinPage extends Page {
 
-    get loginWithPinText(){
-        return $('h3=Login with Pin');
-    }
+class LoginWithPinPage extends Page {
 
     get pinInput(){
         return $('#pin');
@@ -17,9 +14,9 @@ class LoginWithPinPage extends Page {
         return $('#pinHelp');
     }
 
-    // get signOutBtn(){
-    //     return $('.halfBtn');
-    // }
+    get loginWithPinText(){
+        return $('h3=Login with Pin');
+    }
 }
 
 module.exports = new LoginWithPinPage();

@@ -39,7 +39,7 @@ class SetPinPage extends Page{
     }
 
     get skip(){
-        return $('=Skip');//Selector to be checked
+        return $("//u[contains(text(),'Skip')]");//Selector to be checked
     }
 
 }

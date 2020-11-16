@@ -1,7 +1,8 @@
 const SignupPage = require('../pages/signup.page');
 const SetPinPage = require('../pages/setpin.page');
-const LoginWithPinPage = require('../pages/loginwithpin.page');
-const StudentDashboard = require('../pages/studentdashboard.page');
+// const LoginWithPinPage = require('../pages/loginwithpin.page');
+// const StudentDashboard = require('../pages/studentdashboard.page');
+const LoginPage = require('../pages/login.page');
 
 //const LoginPage = require('../pages/login.page');// Importing this for using Login with Pin locators here
 
@@ -26,25 +27,34 @@ describe('Sign Up page', () => {
     //     SignupPage.passwordInput.addValue('12345');
     //     SignupPage.confirmPasswordInput.addValue('12345');
     //     SignupPage.signupBtn.click();
-    //     browser.pause(5000);
+    //     browser.pause(2000);
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
     // });
 
+    // ------------- WORKING FINE TILL HERE -------------
+
+    // ------------- THIS ONE LATER WILL BE MODIFIED -------------
+    // Should throw error warning when enter different password in Password and Confirm Password field
     // it('Password should not get generated', () => {             // Improvement needed to expect error warning
     //     SignupPage.passwordInput.addValue('12345');
-    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('54321');
     //     SignupPage.signupBtn.click();
-    //     browser.pause(15000);
+    //     Expect an error warning 
+    //     browser.pause(2000);
     // });
 
+    // ----------------- Selector of Skip not workin now Need to be Resolved--------------------
     // Skip setting Pin
-    // it('Should skip Two-Step Authentication', () => {
-    //     SignupPage.passwordInput.addValue('12345');
-    //     SignupPage.confirmPasswordInput.addValue('12345');
-    //     SignupPage.signupBtn.click();
-    //     SetPinPage.skip();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
-    // });
+    it('Should skip Two-Step Authentication', () => {
+        SignupPage.passwordInput.addValue('12345');
+        SignupPage.confirmPasswordInput.addValue('12345');
+        SignupPage.signupBtn.click();
+        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin')
+        browser.pause(3000);
+        SetPinPage.skip();// Problem occuring in this line
+        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+        browser.pause(3000);
+    });
 
     //  Student Dashboard should get displayed Sign Up>Set Pin>Login with valid Pin
     // it('Should get Login by Verifyiing pin', () => {
@@ -72,13 +82,14 @@ describe('Sign Up page', () => {
     // });
 
     //  Should get Sign Out displayed Sign Up>Set Pin>Verify Pin>Sign Out
-    it('Should get Login by Verifyiing pin', () => {
+    /*it('Should get Login by Verifyiing pin', () => {
         SignupPage.passwordInput.addValue('12345');
         SignupPage.confirmPasswordInput.addValue('12345');
         SignupPage.signupBtn.click();
         SetPinPage.pinInput.addValue('1234');
         SetPinPage.confirmPinInput.addValue('1234');
         SetPinPage.enterPinBtn.click();
+        browser.pause(2000);//
         LoginWithPinPage.pinInput.addValue('1234');
         //LoginWithPinPage.verifyPinBtn.click();
         //StudentDashboard.signOutBtn.click();
@@ -90,6 +101,6 @@ describe('Sign Up page', () => {
         // StudentDashboard.signOutBtn.click();
         // expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
         // browser.pause(2000);
-    });
+    });*/
 
 });

@@ -10,17 +10,17 @@ class LoginPage extends Page{
         return $('#email');
     }
 
-    get crossIcon(){
-        return // TO BE WRITTEN
-    }
+    // get crossIcon(){
+    //     return // TO BE WRITTEN
+    // }
 
     get passwordInput(){
         return $('#password');
     }
 
-    get eyeIcon(){
-        return // TO BE WRITTEN
-    }
+    // get eyeIcon(){
+    //     return // TO BE WRITTEN
+    // }
 
     get forgotPassword(){
         return $('*=Password?');
@@ -42,21 +42,22 @@ class LoginPage extends Page{
         return // TO BE WRITTEN
     }
 
-    get pinInput(){
-        return $('#pin');
-    }
+    // Login With Pin Page
+    // get pinInput(){
+    //     return $('#pin');
+    // }
 
-    get verifyPinBtn(){
-        return $('.login-btn');
-    }
+    // get verifyPinBtn(){
+    //     return $('.login-btn');
+    // }
 
-    get errorMessageLoginWithPin(){
-        return $('#pinHelp');
-    }
+    // get errorMessageLoginWithPin(){
+    //     return $('#pinHelp');
+    // }
 
-    get signOutBtn(){
-        return $('.halfBtn');
-    }
+    // get signOutBtn(){
+    //     return $('.halfBtn');
+    // }
 }
 
 module.exports = new LoginPage();
