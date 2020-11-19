@@ -3,7 +3,7 @@ const Page = require('./page');
 class SignupPage extends Page{
     
     open(){
-        super.open('http://cti-techoon.azurewebsites.net/signup/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaW5rX3R5cGUiOiJzaWdudXBMaW5rIiwiY29udGFjdF9pZCI6IjI0IiwiY29udGFjdF90eXBlIjoiUyIsImlhdCI6MTYwNTUyNzU1OH0.yhwP75nG-Ha8R4aTQZsVEHqnao8l0Pw7t1r_urJu4P4');
+        super.open('http://cti-techoon.azurewebsites.net/signup/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaW5rX3R5cGUiOiJzaWdudXBMaW5rIiwiY29udGFjdF9pZCI6IjU0IiwiY29udGFjdF90eXBlIjoiUyIsImlhdCI6MTYwNTcwMzQyMX0.7QMkULJeiJ56CtCdJMIkYGAia5E_Apowcjt_U10PLos');
     }
 
     get passwordInput(){

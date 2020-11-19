@@ -1,9 +1,9 @@
 const Page = require('./page');
-class StudentDashboard extends Page{
+class StudentDashboardPage extends Page{
     
     get signOutBtn(){
         return $('.halfBtn');
     }
 }
 
-module.exports = new StudentDashboard();
+module.exports = new StudentDashboardPage();

@@ -10,17 +10,17 @@ class LoginPage extends Page{
         return $('#email');
     }
 
-    // get crossIcon(){
-    //     return // TO BE WRITTEN
-    // }
+    get crossIcon(){
+        return $('//*[@id="root"]/div/div/div/div[2]/form/div[1]/span[2]/i');
+    }
 
     get passwordInput(){
         return $('#password');
     }
 
-    // get eyeIcon(){
-    //     return // TO BE WRITTEN
-    // }
+    get eyeIcon(){
+        return $('//*[@id="root"]/div/div/div/div[2]/form/div[2]/span[2]/i');
+    }
 
     get forgotPassword(){
         return $('*=Password?');

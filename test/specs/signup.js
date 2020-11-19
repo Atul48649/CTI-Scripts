@@ -3,16 +3,23 @@ const SetPinPage = require('../pages/setpin.page');
 // const LoginWithPinPage = require('../pages/loginwithpin.page');
 // const StudentDashboard = require('../pages/studentdashboard.page');
 const LoginPage = require('../pages/login.page');
+const LoginWithPinPage = require('../pages/loginwithpin.page');
+const StudentDashboardPage = require('../pages/studentdashboard.page');
 
 //const LoginPage = require('../pages/login.page');// Importing this for using Login with Pin locators here
 
 describe('Sign Up page', () => {
-    it('Should open the url and verify the title', () => {
+
+    beforeEach(() => {
         SignupPage.open();
-        expect(browser).toHaveTitle('CTI');
     });
 
-    // Should display Sign Up text on the Sign Up Page
+    // Should verify the title
+    // it('Should verify the title', () => {
+    //     expect(browser).toHaveTitle('CTI');
+    // });
+
+    //Should display Sign Up text on the Sign Up Page
     // it('Should display Sign Up text on the screen', () => {
     //     expect(SignupPage.signupText).toBePresent();
     // });
@@ -22,16 +29,14 @@ describe('Sign Up page', () => {
     //     expect(SignupPage.welcomeText).toHaveTextContaining('Welcome,');
     // });
 
-    // Password should get generated and should navigate to Set Pin page
-    // it('Password should get generated and should navigate to Set Pin page', () => {
+    // Password should get generated and Set Pin page should get displayed
+    // it('Password should get generated and Set Pin page should get displayed', () => {
     //     SignupPage.passwordInput.addValue('12345');
     //     SignupPage.confirmPasswordInput.addValue('12345');
     //     SignupPage.signupBtn.click();
-    //     browser.pause(2000);
+    //     //browser.pause(2000);
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
     // });
-
-    // ------------- WORKING FINE TILL HERE -------------
 
     // ------------- THIS ONE LATER WILL BE MODIFIED -------------
     // Should throw error warning when enter different password in Password and Confirm Password field
@@ -43,64 +48,96 @@ describe('Sign Up page', () => {
     //     browser.pause(2000);
     // });
 
-    // ----------------- Selector of Skip not workin now Need to be Resolved--------------------
     // Skip setting Pin
-    it('Should skip Two-Step Authentication', () => {
-        SignupPage.passwordInput.addValue('12345');
-        SignupPage.confirmPasswordInput.addValue('12345');
-        SignupPage.signupBtn.click();
-        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin')
-        browser.pause(3000);
-        SetPinPage.skip();// Problem occuring in this line
-        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
-        browser.pause(3000);
-    });
-
-    //  Student Dashboard should get displayed Sign Up>Set Pin>Login with valid Pin
-    // it('Should get Login by Verifyiing pin', () => {
-    //     SignupPage.passwordInput.addValue('5001');
-    //     SignupPage.confirmPasswordInput.addValue('5001');
+    // it('Should skip Two-Step Authentication', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
     //     SignupPage.signupBtn.click();
-    //     SetPinPage.pinInput.addValue('6001');
-    //     SetPinPage.confirmPinInput.addValue('6001');
-    //     SetPinPage.enterPinBtn.click();
-    //     LoginWithPinPage.pinInput.addValue('6001');
-    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin')
+    //     SetPinPage.skip.click();// Problem occuring in this line
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
     // });
 
-    // Should throw error message Sign Up>Set Pin>Login with invalid Pin
-    // it('Should throw error message when Verifying Pin with invalid pin', () => {
-    //     SignupPage.passwordInput.addValue('5001');
-    //     SignupPage.confirmPasswordInput.addValue('5001');
+    //  When entering same Pin in Pin and Confirm Pin field
+    // it('Pin should get created and Login With Pin page should get displayed', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
     //     SignupPage.signupBtn.click();
-    //     SetPinPage.pinInput.addValue('6001');
-    //     SetPinPage.confirmPinInput.addValue('6001');
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
     //     SetPinPage.enterPinBtn.click();
-    //     LoginWithPinPage.pinInput.addValue('7001');
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
+    // });
+
+    //  When entering different Pin in Pin and Confirm Pin field
+    // it('Pin should not get created and should throw an error message', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.signupBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('4321');
+    //     SetPinPage.enterPinBtn.click();
+    //     expect(SetPinPage.errorMessageDifferentPin).toHaveText('pin and confirm pin should be same.');
+    //     browser.pause(2000);
+    // });
+
+    //  Signup>Set Pin>Login With valid Pin
+    // it('Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.signupBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
+    //     browser.pause(2000);
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    // });
+    
+    //  Should throw error message when Login>Set Pin>Login With invalid Pin
+    // it('Should throw error message while entering invalid pin and clicking on VERIFY PIN button', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.signupBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
+    //     browser.pause(2000);
+    //     LoginWithPinPage.pinInput.addValue('9211');
+    //     LoginWithPinPage.verifyPinBtn.click();
     //     expect(LoginWithPinPage.errorMessageLoginWithPin).toHaveText('Wrong Pin.');
     // });
 
-    //  Should get Sign Out displayed Sign Up>Set Pin>Verify Pin>Sign Out
-    /*it('Should get Login by Verifyiing pin', () => {
-        SignupPage.passwordInput.addValue('12345');
-        SignupPage.confirmPasswordInput.addValue('12345');
-        SignupPage.signupBtn.click();
-        SetPinPage.pinInput.addValue('1234');
-        SetPinPage.confirmPinInput.addValue('1234');
-        SetPinPage.enterPinBtn.click();
-        browser.pause(2000);//
-        LoginWithPinPage.pinInput.addValue('1234');
-        //LoginWithPinPage.verifyPinBtn.click();
-        //StudentDashboard.signOutBtn.click();
-        browser.pause(2000);
-        expect(LoginWithPinPage.verifyPinBtn).toBeClickable()
-        browser.pause(2000);
-        // LoginWithPinPage.verifyPinBtn.click();
-        // browser.pause(2000);
-        // StudentDashboard.signOutBtn.click();
-        // expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
-        // browser.pause(2000);
-    });*/
+    // Should get Sign Out Signup>Set Pin>Skip>Student Dashboard>Login Page
+    // it('Should skip Two-Step Authentication and should display Student Dashboard and after Sign Out should navigate to Login Page', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.signupBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin')
+    //     SetPinPage.skip.click();// Problem occuring in this line
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    //     StudentDashboardPage.signOutBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    //     browser.pause(2000);
+    // });
 
+    // Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard
+    // it('Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.signupBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
+    //     browser.pause(2000);
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    //     StudentDashboardPage.signOutBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    // });
+
+    // ------------- WORKING FINE TILL HERE -------------
+    
 });

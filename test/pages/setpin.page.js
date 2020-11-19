@@ -42,6 +42,10 @@ class SetPinPage extends Page{
         return $("//u[contains(text(),'Skip')]");//Selector to be checked
     }
 
+    get errorMessageDifferentPin(){
+        return $('#confirmPasswordHelp');
+    }
+
 }
 
 module.exports = new SetPinPage();

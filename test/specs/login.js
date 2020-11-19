@@ -1,17 +1,45 @@
 const LoginPage = require('../pages/login.page');
 const SetPinPage = require('../pages/setpin.page');
 const LoginWithPinPage = require('../pages/loginwithpin.page');
-const StudentDashboard = require('../pages/studentdashboard.page');
+const StudentDashboardPage = require('../pages/studentdashboard.page');
 
 describe('Login page', () => {
     beforeEach(() => {
         LoginPage.open();
     });
 
-    it('Should open the url and verify the title', () => {
-        LoginPage.open();
-        expect(browser).toHaveTitle('CTI');
+    // afterEach(() => {
+    //     browser.refresh();
+    // });
+
+    //  =========================== LOGIN ===============================
+
+    // Entered Email Id/ Phone Number in the input field should get cleared
+    // it('Entered Email Id/ Phone Number in the input field should get cleared', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
+    //     browser.pause(2000);
+    //     LoginPage.crossIcon.click();
+    //     browser.pause(2000);
+    // });
+
+    // Entered Password should get visible
+    it('Entered Password should get visible', () => {
+        browser.pause(2000);
+        LoginPage.passwordInput.addValue('123654789');
+        LoginPage.eyeIcon.click();
+        browser.pause(2000);
+        browser.isVisibleWithinViewport(LoginPage.eyeIcon);     //=============Error Coming================
+        //browser.isVisible(LoginPage.eyeIcon);
+        //LoginPage.eyeIcon.isVisible(selector);
+        browser.pause(2000);
+        //LoginPage.eyeIcon.click();
+        //browser.pause(2000);
     });
+
+    // Verifying Title of the Page
+    // it('Should verify the title of the page', () => {
+    //     expect(browser).toHaveTitle('CTI');
+    // });
 
     // -----------------SHOULD THROW WARNING EVEN IF WE DON'T INCLUDE '.' IN IT-----------------
     // When entering invalid Email Id / Phone Number and valid Password
@@ -47,81 +75,121 @@ describe('Login page', () => {
     //     browser.pause(2000);
     // });
 
-    // When entering valid login credentials
-    // it('User should get login', () => {
+    // When entering valid Login credentials
+    // it('Student should get Login and Set Pin/Login With Pin Page should get displayed', () => {
     //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
     //     LoginPage.passwordInput.addValue('5001');
     //     LoginPage.loginBtn.click();
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
-    //     //browser.pause(2000);
     // });
 
-    // After login should get login with pin
-    // it('Should get Login With Pin', () => {
-    //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
-    //     LoginPage.passwordInput.addValue('5001');
-    //     LoginPage.checkboxInput.click();
-    //     LoginPage.loginBtn.click();
-    //     //expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
-    //     LoginWithPinPage.pinInput.addValue('6001');
-    //     LoginWithPinPage.verifyPinBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
-    //     browser.pause(2000);
-    // });
-
-    // After login when entering invalid pin should throw error message
-    // it('Should throw error message', () => {
-    //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
-    //     LoginPage.passwordInput.addValue('5001');
-    //     LoginPage.checkboxInput.click();
-    //     LoginPage.loginBtn.click();
-    //     //expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
-    //     LoginWithPinPage.pinInput.addValue('92119211');
-    //     LoginWithPinPage.verifyPinBtn.click();
-    //     expect(LoginWithPinPage.errorMessageLoginWithPin).toHaveText('Wrong Pin.');
-    //     browser.pause(2000);
-    // });
-
-    // Student Sign Out
-    // it('Student should get Sign Out', () => {
-    //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
-    //     LoginPage.passwordInput.addValue('5001');
-    //     LoginPage.checkboxInput.click();
-    //     LoginPage.loginBtn.click();
-    //     LoginWithPinPage.pinInput.addValue('6001');
-    //     LoginWithPinPage.verifyPinBtn.click();
-    //     StudentDashboard.signOutBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
-    //     browser.pause(2000);
-    // });
-
-    // Login and haven't set the Pin earlier Login>Set Pin>Login With Pin>Sign Out
+    //  Login>Set Pin(When Pin is not created)
     // it('Login and setting Pin', () => {
-    //     LoginPage.emailOrPhoneInput.addValue('burkey21@hotmail.com');
+    //     LoginPage.emailOrPhoneInput.addValue('samuel.mckinnon@gmail.com');
     //     LoginPage.passwordInput.addValue('12345');
     //     LoginPage.loginBtn.click();
     //     SetPinPage.pinInput.addValue('1234');
     //     SetPinPage.confirmPinInput.addValue('1234');
     //     SetPinPage.enterPinBtn.click();
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/sign/pin');
-    //     LoginWithPinPage.pinInput.addValue('1234');
-    //     LoginWithPinPage.verifyPinBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
-    //     StudentDashboard.signOutBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
-    //     browser.pause(2000);
     // });
 
-    // Login and haven't set the Pin earlier Login>Skip>Sign Out
-    // it('Login and setting Pin', () => {
-    //     LoginPage.emailOrPhoneInput.addValue('0423481105');
+    //  Should throw error message when enter different pin in Pin and Confirm Pin field
+    // it('Should throw error message when entered pin in Pin and Confirm Pin does not matches', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('gjmarsh@westnet.com.au');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('4321');
+    //     SetPinPage.enterPinBtn.click();
+    //     expect(SetPinPage.errorMessageDifferentPin).toHaveText('pin and confirm pin should be same.');
+    // });
+
+    // Skip setting pin
+    // it('While Login Skip setting Pin', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('gjmarsh@westnet.com.au');
     //     LoginPage.passwordInput.addValue('12345');
     //     LoginPage.loginBtn.click();
     //     SetPinPage.skip.click();
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
-    //     StudentDashboard.signOutBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    // });
+
+    // Login>Set Pin>Login With Pin
+    // it('Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('joe_leighton@hotmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
     //     browser.pause(2000);
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     browser.pause(5000);
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    // });
+
+    //  Should throw error message when Login>Set Pin>Login With invalid Pin
+    // it('Should throw error message when entered pin in Pin field does not matches to the seted pin', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('tabohrah.18@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
+    //     browser.pause(2000);
+    //     LoginWithPinPage.pinInput.addValue('9211');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(LoginWithPinPage.errorMessageLoginWithPin).toHaveText('Wrong Pin.');
+    // });
+
+    //  Login>Login With valid Pin(When Pin is already created)
+    // it('Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('goodesean@hotmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    // });
+
+    //  Should throw error message when Login>Login With invalid Pin
+    // it('Should throw error message while entering invalid pin and clicking on VERIFY PIN button(Pin setted earlier)', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('goodesean@hotmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     LoginWithPinPage.pinInput.addValue('9211');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(LoginWithPinPage.errorMessageLoginWithPin).toHaveText('Wrong Pin.');
+    // });
+
+    // Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard>Login
+    // it('Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('hunterclayworth@hotmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     SetPinPage.pinInput.addValue('1234');
+    //     SetPinPage.confirmPinInput.addValue('1234');
+    //     SetPinPage.enterPinBtn.click();
+    //     browser.pause(2000);
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     //LoginWithPinPage.verifyPinBtn.waitForClickable({ timeout: 3000 });
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    //     StudentDashboardPage.signOutBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    // });
+
+    // Student Should get Sign Out Login>Login With Pin>Student Dashboard
+    // it('Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('hunterclayworth@hotmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     LoginWithPinPage.pinInput.addValue('1234');
+    //     LoginWithPinPage.verifyPinBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+    //     StudentDashboardPage.signOutBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
     // });
 
     // When try to login again we should get credentials prefilled becuse we marked Remember Me as checked
@@ -135,11 +203,18 @@ describe('Login page', () => {
     //     browser.pause(2000);
     //     LoginWithPinPage.verifyPinBtn.click();
     //     browser.pause(2000);
-    //     StudentDashboard.signOutBtn.click();
+    //     StudentDashboardPage.signOutBtn.click();
     //     browser.pause(2000);
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
     //     expect(LoginPage.emailOrPhoneInput).toHaveValue('shuker07@bigpond.com');
     //     expect(LoginPage.passwordInput).toHaveValue('5001');
+    //     browser.pause(2000);
+    // });
+
+    //--------------------This Feature Not Working Yet--------------------------
+    // it('forgot password should get clicked', () => {
+    //     LoginPage.forgotPassword.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/user/user/forgot');
     //     browser.pause(2000);
     // });
 
@@ -161,11 +236,4 @@ describe('Login page', () => {
     //     browser.pause(10000);
     // });
 
-
-    // it('forgot password should get clicked', () => {
-    //     LoginPage.forgotPassword.click();
-    //     browser.pause(5000);
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/user/user/forgot');
-    //     browser.pause(5000);
-    // });
 });
