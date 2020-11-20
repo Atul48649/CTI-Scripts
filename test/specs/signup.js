@@ -5,6 +5,7 @@ const SetPinPage = require('../pages/setpin.page');
 const LoginPage = require('../pages/login.page');
 const LoginWithPinPage = require('../pages/loginwithpin.page');
 const StudentDashboardPage = require('../pages/studentdashboard.page');
+import allureReporter from '@wdio/allure-reporter'
 
 //const LoginPage = require('../pages/login.page');// Importing this for using Login with Pin locators here
 
@@ -15,28 +16,28 @@ describe('Sign Up page', () => {
     });
 
     // Should verify the title
-    // it('Should verify the title', () => {
-    //     expect(browser).toHaveTitle('CTI');
-    // });
+    it('Should verify the title', () => {
+        expect(browser).toHaveTitle('CTI');
+    });
 
     //Should display Sign Up text on the Sign Up Page
-    // it('Should display Sign Up text on the screen', () => {
-    //     expect(SignupPage.signupText).toBePresent();
-    // });
+    it('Should display Sign Up text on the screen', () => {
+        expect(SignupPage.signupText).toBePresent();
+    });
 
     // Sign Up page should have text containing "Welcome, Student Name"
-    // it('Should display Welcome text before the Student Name on the screen', () => {
-    //     expect(SignupPage.welcomeText).toHaveTextContaining('Welcome,');
-    // });
+    it('Should display Welcome text before the Student Name on the screen', () => {
+        expect(SignupPage.welcomeText).toHaveTextContaining('Welcome,');
+    });
 
     // Password should get generated and Set Pin page should get displayed
-    // it('Password should get generated and Set Pin page should get displayed', () => {
-    //     SignupPage.passwordInput.addValue('12345');
-    //     SignupPage.confirmPasswordInput.addValue('12345');
-    //     SignupPage.signupBtn.click();
-    //     //browser.pause(2000);
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
-    // });
+    it('Password should get generated and Set Pin page should get displayed', () => {
+        SignupPage.passwordInput.addValue('12345');
+        SignupPage.confirmPasswordInput.addValue('12345');
+        SignupPage.signupBtn.click();
+        //browser.pause(2000);
+        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
+    });
 
     // ------------- THIS ONE LATER WILL BE MODIFIED -------------
     // Should throw error warning when enter different password in Password and Confirm Password field

@@ -2,6 +2,7 @@ const LoginPage = require('../pages/login.page');
 const SetPinPage = require('../pages/setpin.page');
 const LoginWithPinPage = require('../pages/loginwithpin.page');
 const StudentDashboardPage = require('../pages/studentdashboard.page');
+import allureReporter from '@wdio/allure-reporter'
 
 describe('Login page', () => {
     beforeEach(() => {
@@ -164,21 +165,21 @@ describe('Login page', () => {
     // });
 
     // Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard>Login
-    // it('Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed', () => {
-    //     LoginPage.emailOrPhoneInput.addValue('hunterclayworth@hotmail.com');
-    //     LoginPage.passwordInput.addValue('12345');
-    //     LoginPage.loginBtn.click();
-    //     SetPinPage.pinInput.addValue('1234');
-    //     SetPinPage.confirmPinInput.addValue('1234');
-    //     SetPinPage.enterPinBtn.click();
-    //     browser.pause(2000);
-    //     LoginWithPinPage.pinInput.addValue('1234');
-    //     //LoginWithPinPage.verifyPinBtn.waitForClickable({ timeout: 3000 });
-    //     LoginWithPinPage.verifyPinBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
-    //     StudentDashboardPage.signOutBtn.click();
-    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
-    // });
+    it('Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed', () => {
+        LoginPage.emailOrPhoneInput.addValue('hunterclayworth@hotmail.com');
+        LoginPage.passwordInput.addValue('12345');
+        LoginPage.loginBtn.click();
+        SetPinPage.pinInput.addValue('1234');
+        SetPinPage.confirmPinInput.addValue('1234');
+        SetPinPage.enterPinBtn.click();
+        browser.pause(2000);
+        LoginWithPinPage.pinInput.addValue('1234');
+        //LoginWithPinPage.verifyPinBtn.waitForClickable({ timeout: 3000 });
+        LoginWithPinPage.verifyPinBtn.click();
+        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/student/dashboard');
+        StudentDashboardPage.signOutBtn.click();
+        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
+    });
 
     // Student Should get Sign Out Login>Login With Pin>Student Dashboard
     // it('Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed', () => {

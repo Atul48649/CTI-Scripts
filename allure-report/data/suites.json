@@ -1,0 +1,61 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Sign Up page",
+    "children" : [ {
+      "name" : "Should verify the title",
+      "uid" : "14187fe2a8047bdc",
+      "parentUid" : "c7ff4eb43f25d50fab3bb1cd182bc191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605874780777,
+        "stop" : 1605874781785,
+        "duration" : 1008
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-86.0.4240.198" ]
+    }, {
+      "name" : "Should display Sign Up text on the screen",
+      "uid" : "f11d3bcece7bb544",
+      "parentUid" : "c7ff4eb43f25d50fab3bb1cd182bc191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605874781785,
+        "stop" : 1605874782459,
+        "duration" : 674
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-86.0.4240.198" ]
+    }, {
+      "name" : "Should display Welcome text before the Student Name on the screen",
+      "uid" : "ff1927d5990f6b45",
+      "parentUid" : "c7ff4eb43f25d50fab3bb1cd182bc191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605874782459,
+        "stop" : 1605874783132,
+        "duration" : 673
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-86.0.4240.198" ]
+    }, {
+      "name" : "Password should get generated and Set Pin page should get displayed",
+      "uid" : "4b8f6685a92926f9",
+      "parentUid" : "c7ff4eb43f25d50fab3bb1cd182bc191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605874783132,
+        "stop" : 1605874785017,
+        "duration" : 1885
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-86.0.4240.198" ]
+    } ],
+    "uid" : "c7ff4eb43f25d50fab3bb1cd182bc191"
+  } ]
+}

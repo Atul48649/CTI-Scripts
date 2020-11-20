@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Nov 20 17:49:40 IST 2020","Fri Nov 20 17:49:41 IST 2020","1008","","Sign Up page","","Sign Up page","Should verify the title","Should verify the title",""
+"passed","Fri Nov 20 17:49:42 IST 2020","Fri Nov 20 17:49:43 IST 2020","673","","Sign Up page","","Sign Up page","Should display Welcome text before the Student Name on the screen","Should display Welcome text before the Student Name on the screen",""
+"passed","Fri Nov 20 17:49:41 IST 2020","Fri Nov 20 17:49:42 IST 2020","674","","Sign Up page","","Sign Up page","Should display Sign Up text on the screen","Should display Sign Up text on the screen",""
+"passed","Fri Nov 20 17:49:43 IST 2020","Fri Nov 20 17:49:45 IST 2020","1885","","Sign Up page","","Sign Up page","Password should get generated and Set Pin page should get displayed","Password should get generated and Set Pin page should get displayed",""

@@ -1,0 +1,41 @@
+[ {
+  "uid" : "14187fe2a8047bdc",
+  "name" : "Should verify the title",
+  "time" : {
+    "start" : 1605874780777,
+    "stop" : 1605874781785,
+    "duration" : 1008
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b8f6685a92926f9",
+  "name" : "Password should get generated and Set Pin page should get displayed",
+  "time" : {
+    "start" : 1605874783132,
+    "stop" : 1605874785017,
+    "duration" : 1885
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff1927d5990f6b45",
+  "name" : "Should display Welcome text before the Student Name on the screen",
+  "time" : {
+    "start" : 1605874782459,
+    "stop" : 1605874783132,
+    "duration" : 673
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f11d3bcece7bb544",
+  "name" : "Should display Sign Up text on the screen",
+  "time" : {
+    "start" : 1605874781785,
+    "stop" : 1605874782459,
+    "duration" : 674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
