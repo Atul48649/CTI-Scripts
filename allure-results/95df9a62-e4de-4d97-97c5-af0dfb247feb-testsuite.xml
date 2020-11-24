@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606209877407' stop='1606209877999'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1606209877407' status='broken' stop='1606209877998'>
+            <name>"before each" hook for "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button"</name>
+            <title>"before each" hook for "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=86.0.4240.198)</message>
+                <stack-trace>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=86.0.4240.198)
+                    at Object.getErrorFromResponseBody (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriver\build\utils.js:94:12)
+                    at WebDriverRequest._request (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriver\build\request.js:133:31)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Browser.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:70:25)
+                    at Browser.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Browser.wrapCommandFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at LoginPage.open (C:\Users\Atul Kumar\Desktop\CTI\test\pages\page.js:3:24)
+                    at LoginPage.open (C:\Users\Atul Kumar\Desktop\CTI\test\pages\login.page.js:6:15)
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\specs\login.js:9:19)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606218927963' stop='1606218939453'>
+    <name>Set Pin page</name>
+    <title>Set Pin page</title>
+    <test-cases>
+        <test-case start='1606218927964' status='failed' stop='1606218939340'>
+            <name>open the url and login</name>
+            <title>open the url and login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect window to have title
+                
+                Expected: "CTII"
+                Received: "CTI"</message>
+                <stack-trace>Error: Expect window to have title
+                
+                Expected: "CTII"
+                Received: "CTI"
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\specs\setpin.js:10:25)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1606218939340' status='passed' stop='1606218939350'>
+            <name>Should verify the title</name>
+            <title>Should verify the title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606218939351' status='passed' stop='1606218939377'>
+            <name>Logo should be displayed</name>
+            <title>Logo should be displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606218939377' status='passed' stop='1606218939453'>
+            <name>Should display Set Pin text on the screen</name>
+            <title>Should display Set Pin text on the screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -6,12 +6,16 @@ class LoginPage extends Page{
         super.open('http://cti-techoon.azurewebsites.net/');
     }
 
+    get ctiLogo(){
+        return $("//img[@alt='CTI logo']");
+    }
+
     get emailOrPhoneInput(){
         return $('#email');
     }
 
     get crossIcon(){
-        return $('//*[@id="root"]/div/div/div/div[2]/form/div[1]/span[2]/i');
+        return $('.input-group').$('.fa-times-circle');
     }
 
     get passwordInput(){
@@ -20,6 +24,8 @@ class LoginPage extends Page{
 
     get eyeIcon(){
         return $('//*[@id="root"]/div/div/div/div[2]/form/div[2]/span[2]/i');
+        //return $('.input-group').$('//i[@aria-hidden="true"]');//Running fine but unable to see the exection here
+                                                                 // also pause command is not working here
     }
 
     get forgotPassword(){
@@ -42,22 +48,10 @@ class LoginPage extends Page{
         return // TO BE WRITTEN
     }
 
-    // Login With Pin Page
-    // get pinInput(){
-    //     return $('#pin');
-    // }
+    get loginText(){
+        return $('h3*=login');
+    }
 
-    // get verifyPinBtn(){
-    //     return $('.login-btn');
-    // }
-
-    // get errorMessageLoginWithPin(){
-    //     return $('#pinHelp');
-    // }
-
-    // get signOutBtn(){
-    //     return $('.halfBtn');
-    // }
 }
 
 module.exports = new LoginPage();

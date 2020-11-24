@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "Should verify the title",
-    "uid" : "14187fe2a8047bdc",
+    "uid" : "5899ddf03fbcde73",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -16,7 +16,7 @@
     "parameters" : [ "chrome-86.0.4240.198" ]
   }, {
     "name" : "Should display Sign Up text on the screen",
-    "uid" : "f11d3bcece7bb544",
+    "uid" : "308fce717bf862b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -29,7 +29,7 @@
     "parameters" : [ "chrome-86.0.4240.198" ]
   }, {
     "name" : "Should display Welcome text before the Student Name on the screen",
-    "uid" : "ff1927d5990f6b45",
+    "uid" : "b98cbd2014a90f2b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -42,13 +42,260 @@
     "parameters" : [ "chrome-86.0.4240.198" ]
   }, {
     "name" : "Password should get generated and Set Pin page should get displayed",
-    "uid" : "4b8f6685a92926f9",
+    "uid" : "10ee5a2a9abe95b0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
       "start" : 1605874783132,
       "stop" : 1605874785017,
       "duration" : 1885
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Logo should be displayed",
+    "uid" : "61e531b3e355ad9b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606196735915,
+      "stop" : 1606196737076,
+      "duration" : 1161
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Entered Email Id/ Phone Number in the input field should get cleared",
+    "uid" : "2cf54d71eff7eb3e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606197620895,
+      "stop" : 1606197626432,
+      "duration" : 5537
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Entered Password should get visible",
+    "uid" : "3a31f2d7793d06f1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606200280990,
+      "stop" : 1606200288242,
+      "duration" : 7252
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Should throw error message for Password field",
+    "uid" : "65d042b48666c8f4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1606200353480,
+      "stop" : 1606200366801,
+      "duration" : 13321
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Student should get Login and Set Pin/Login With Pin Page should get displayed",
+    "uid" : "66a21570f4c3dd7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606200402139,
+      "stop" : 1606200404078,
+      "duration" : 1939
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Student should get Login and Set Pin Page should get displayed",
+    "uid" : "ef497c64afc28d54",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606205965433,
+      "stop" : 1606205967892,
+      "duration" : 2459
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Student should get Login and Login With Pin Page should get displayed",
+    "uid" : "180dc018bda2d489",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606205992342,
+      "stop" : 1606205994549,
+      "duration" : 2207
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Login and setting Pin",
+    "uid" : "8ece4edcc6913f27",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606206088156,
+      "stop" : 1606206091482,
+      "duration" : 3326
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Should throw error message when entered pin in Pin and Confirm Pin does not matches",
+    "uid" : "30ec60b9f4beb03a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606206250023,
+      "stop" : 1606206252767,
+      "duration" : 2744
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "While Login Skip setting Pin",
+    "uid" : "2408d7a5a5e63952",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606206417488,
+      "stop" : 1606206420050,
+      "duration" : 2562
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Should throw error message when entered pin in Pin field does not matches to the seted pin",
+    "uid" : "302d3cfee101c2df",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606207053417,
+      "stop" : 1606207056997,
+      "duration" : 3580
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\"",
+    "uid" : "6ffed786b14be6fd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1606209877407,
+      "stop" : 1606209877998,
+      "duration" : 591
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button",
+    "uid" : "c1664618458e5415",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606209973923,
+      "stop" : 1606209976928,
+      "duration" : 3005
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Should throw error message while entering invalid pin and clicking on VERIFY PIN button(Pin setted earlier)",
+    "uid" : "87526160833d1667",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606210039288,
+      "stop" : 1606210042448,
+      "duration" : 3160
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed",
+    "uid" : "512c86bfff59b728",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606210338855,
+      "stop" : 1606210342615,
+      "duration" : 3760
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed",
+    "uid" : "e0738eb0afc9ab3e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606210537080,
+      "stop" : 1606210540179,
+      "duration" : 3099
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+    "uid" : "6fb7022750ef859f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606210741146,
+      "stop" : 1606210744903,
+      "duration" : 3757
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Logo should be displayed",
+    "uid" : "de97ada91bbe9014",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606212337452,
+      "stop" : 1606212339000,
+      "duration" : 1548
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-86.0.4240.198" ]
+  }, {
+    "name" : "Signup button should be disabled",
+    "uid" : "d17e0ab535e8e37b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1606214365501,
+      "stop" : 1606214372400,
+      "duration" : 6899
     },
     "flaky" : false,
     "newFailed" : false,

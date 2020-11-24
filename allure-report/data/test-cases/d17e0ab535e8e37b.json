@@ -1,0 +1,66 @@
+{
+  "uid" : "d17e0ab535e8e37b",
+  "name" : "Signup button should be disabled",
+  "fullName" : "Sign Up page.Signup button should be disabled",
+  "historyId" : "2dc8dbd1fd6be7cd87881cf9816a5f3c",
+  "time" : {
+    "start" : 1606214365501,
+    "stop" : 1606214372400,
+    "duration" : 6899
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Signup button should be disabled"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b248483647a06c59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606212339000,
+        "stop" : 1606212339206,
+        "duration" : 206
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d17e0ab535e8e37b.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

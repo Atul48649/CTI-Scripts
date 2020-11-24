@@ -3,7 +3,11 @@ const Page = require('./page');
 class SetPinPage extends Page{
     
     open(){
-        super.open('http://cti-techoon.azurewebsites.net/set/pin');
+        super.open('http://cti-techoon.azurewebsites.net/');
+    }
+
+    get ctiLogo(){
+        return $("//img[@alt='CTI logo']");
     }
 
     get setpinText(){
@@ -23,7 +27,7 @@ class SetPinPage extends Page{
     }
 
     get pinEyeIcon(){
-        return // TO BE WRITTEN
+        return $("//*[@id='root']/div/div/div/div/div[2]/form/div[1]/span[2]/i");
     }
 
     get confirmPinInput(){
@@ -31,7 +35,7 @@ class SetPinPage extends Page{
     }
 
     get confirmPinEyeIcon(){
-        return // TO BE WRITTEN
+        return $("//*[@id='root']/div/div/div/div/div[2]/form/div[2]/span[2]/i");
     }
 
     get enterPinBtn(){
@@ -39,7 +43,7 @@ class SetPinPage extends Page{
     }
 
     get skip(){
-        return $("//u[contains(text(),'Skip')]");//Selector to be checked
+        return $("//u[contains(text(),'Skip')]");
     }
 
     get errorMessageDifferentPin(){

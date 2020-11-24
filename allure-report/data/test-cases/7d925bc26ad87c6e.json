@@ -1,0 +1,129 @@
+{
+  "uid" : "7d925bc26ad87c6e",
+  "name" : "Should verify the title",
+  "fullName" : "Sign Up page.Should verify the title",
+  "historyId" : "222688e243533bd3cdfbf29c59349d56",
+  "time" : {
+    "start" : 1605855158831,
+    "stop" : 1605855159858,
+    "duration" : 1027
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1605855158840,
+        "stop" : 1605855159700,
+        "duration" : 860
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c872878f54eae275",
+        "name" : "Request",
+        "source" : "c872878f54eae275.json",
+        "type" : "application/json",
+        "size" : 247
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /session/:sessionId/window/maximize",
+      "time" : {
+        "start" : 1605855159701,
+        "stop" : 1605855159832,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "99f4f2a809f78a1a",
+        "name" : "Response",
+        "source" : "99f4f2a809f78a1a.json",
+        "type" : "application/json",
+        "size" : 59
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /session/:sessionId/title",
+      "time" : {
+        "start" : 1605855159840,
+        "stop" : 1605855159855,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "286a46b2edc1ab41",
+        "name" : "Response",
+        "source" : "286a46b2edc1ab41.json",
+        "type" : "application/json",
+        "size" : 5
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should verify the title"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7d925bc26ad87c6e.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

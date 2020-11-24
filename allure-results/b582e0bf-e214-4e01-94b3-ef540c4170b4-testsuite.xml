@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606206853473' stop='1606206857091'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1606206853473' status='passed' stop='1606206857090'>
+            <name>Should throw error message when entered pin in Pin field does not matches to the seted pin</name>
+            <title>Should throw error message when entered pin in Pin field does not matches to the seted pin</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

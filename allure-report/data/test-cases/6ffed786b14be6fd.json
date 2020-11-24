@@ -1,0 +1,64 @@
+{
+  "uid" : "6ffed786b14be6fd",
+  "name" : "\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\"",
+  "fullName" : "Login page.\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\"",
+  "historyId" : "650b4fdc01b98e0c58a8ce4e1f7f95",
+  "time" : {
+    "start" : 1606209877407,
+    "stop" : 1606209877998,
+    "duration" : 591
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: net::ERR_INTERNET_DISCONNECTED\n                  (Session info: chrome=86.0.4240.198)",
+  "statusTrace" : "unknown error: net::ERR_INTERNET_DISCONNECTED\n                  (Session info: chrome=86.0.4240.198)\n                    at Object.getErrorFromResponseBody (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriver\\build\\utils.js:94:12)\n                    at WebDriverRequest._request (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriver\\build\\request.js:133:31)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at async Browser.runCommandWithHooks (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:70:25)\n                    at Browser.runCommandWithHooks (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:65:24)\n                    at Browser.wrapCommandFn (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:44:44)\n                    at LoginPage.open (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\pages\\page.js:3:24)\n                    at LoginPage.open (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\pages\\login.page.js:6:15)\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\login.js:9:19)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\""
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6ffed786b14be6fd.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

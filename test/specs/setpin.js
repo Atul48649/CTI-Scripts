@@ -1,27 +1,56 @@
 const SetPinPage = require('../pages/setpin.page');
+const LoginPage = require('../pages/login.page');
 
 describe('Set Pin page', () => {
-    it('Should open the url and verify the title', () => {
-        SetPinPage.open();
+    // Unable to test any test case here
+    /*  
+    // TODO : Defining path to the Set Pin screen
+    before(() => {
+        LoginPage.open();
+        // LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+        // LoginPage.passwordInput.addValue('12345');
+        // LoginPage.loginBtn.click();
+        // browser.pause(2000);
+    });
+     
+    afterEach(() => {
+        LoginPage.open();
+        LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+        LoginPage.passwordInput.addValue('12345');
+        LoginPage.loginBtn.click();
+    });
+    */
+
+    // Should verify the title
+    it('Should verify the title', () => {
         expect(browser).toHaveTitle('CTI');
+        console.log("Should verify the title");
     });
 
-    // it('Pin should get generated and should navigate to ', () => {
-    //     SetPinPage.pinInput.addValue('1234');
-    //     SetPinPage.confirmPinInput.addValue('1234');
-    //     SetPinPage.enterPinBtn.click();
-    //     browser.pause(15000);
-    // });
-
-    // it('Pin should not get generated', () => {
-    //     SetPinPage.pinInput.addValue('1234');
-    //     SetPinPage.confirmPinInput.addValue('5678');
-    //     SetPinPage.enterPinBtn.click();
-    //     browser.pause(15000);
-    // });
-
-    it('Two step verification should get skipped', () => {
-        SetPinPage.skip.click();
-        browser.pause(10000);
+    // Logo of CTI should be present and visible
+    it('Logo should be displayed', () => {
+        expect(SetPinPage.ctiLogo).toBeVisible()
+        console.log("Should verify the title");
     });
+
+    // Should display Set Pin text on the Set Pin Screen
+    it('Should display Set Pin text on the screen', () => {
+        expect(SetPinPage.setpinText).toBeDisplayed()
+    });
+
+    // Should display "2 step verification" text on the Set Pin Screen
+    it('Should display Set Pin text on the screen', () => {
+        expect(SetPinPage.twoStepVerificationText).toBeDisplayed()
+    });
+
+    // Should display "You can add 2 step verification to login into your account" text on the Set Pin Screen
+    it('Should display Set Pin text on the screen', () => {
+        expect(SetPinPage.paragraphText).toBeDisplayed()
+    });
+
+    // By default ENTER PIN button should be disabled
+    it('Enter Pin button should be disabled', () => {
+        SetPinPage.enterPinBtn.waitForClickable({ reverse: true });
+    });
+
 });

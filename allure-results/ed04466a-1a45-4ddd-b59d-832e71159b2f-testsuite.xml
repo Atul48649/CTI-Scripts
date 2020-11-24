@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606223368051' stop='1606223385141'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1606223368052' status='failed' stop='1606223385140'>
+            <name>Should display Set Pin text on the screen</name>
+            <title>Should display Set Pin text on the screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`h3=Set Pin`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>Error: Expect $(`h3=Set Pin`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\specs\login.js:245:39)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

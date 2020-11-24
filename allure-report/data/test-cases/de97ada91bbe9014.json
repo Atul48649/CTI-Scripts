@@ -1,0 +1,66 @@
+{
+  "uid" : "de97ada91bbe9014",
+  "name" : "Logo should be displayed",
+  "fullName" : "Sign Up page.Logo should be displayed",
+  "historyId" : "af216ff9fad39d457f12d584c7a59406",
+  "time" : {
+    "start" : 1606212337452,
+    "stop" : 1606212339000,
+    "duration" : 1548
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logo should be displayed"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "633f6b44f98bd082",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606212155080,
+        "stop" : 1606212157080,
+        "duration" : 2000
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de97ada91bbe9014.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

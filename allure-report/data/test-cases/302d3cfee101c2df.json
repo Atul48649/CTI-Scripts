@@ -1,0 +1,93 @@
+{
+  "uid" : "302d3cfee101c2df",
+  "name" : "Should throw error message when entered pin in Pin field does not matches to the seted pin",
+  "fullName" : "Login page.Should throw error message when entered pin in Pin field does not matches to the seted pin",
+  "historyId" : "92c3f2147887dbbdf4b70c92b882ccaf",
+  "time" : {
+    "start" : 1606207053417,
+    "stop" : 1606207056997,
+    "duration" : 3580
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should throw error message when entered pin in Pin field does not matches to the seted pin"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "30d5f57da469e941",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#email\" because element wasn't found",
+      "time" : {
+        "start" : 1606206952605,
+        "stop" : 1606206962792,
+        "duration" : 10187
+      }
+    }, {
+      "uid" : "dccf926fc79e918a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606206853473,
+        "stop" : 1606206857090,
+        "duration" : 3617
+      }
+    }, {
+      "uid" : "9a7ce7665795cd6b",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"",
+      "time" : {
+        "start" : 1606206784713,
+        "stop" : 1606206796257,
+        "duration" : 11544
+      }
+    }, {
+      "uid" : "c7e6c750a59fa42f",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606206686657,
+        "stop" : 1606206699089,
+        "duration" : 12432
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "302d3cfee101c2df.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

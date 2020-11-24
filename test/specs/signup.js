@@ -5,7 +5,7 @@ const SetPinPage = require('../pages/setpin.page');
 const LoginPage = require('../pages/login.page');
 const LoginWithPinPage = require('../pages/loginwithpin.page');
 const StudentDashboardPage = require('../pages/studentdashboard.page');
-import allureReporter from '@wdio/allure-reporter'
+//import allureReporter from '@wdio/allure-reporter'
 
 //const LoginPage = require('../pages/login.page');// Importing this for using Login with Pin locators here
 
@@ -16,9 +16,14 @@ describe('Sign Up page', () => {
     });
 
     // Should verify the title
-    it('Should verify the title', () => {
-        expect(browser).toHaveTitle('CTI');
-    });
+    // it('Should verify the title', () => {
+    //     expect(browser).toHaveTitle('CTI');
+    // });
+
+    // Logo of CTI should be present and visible
+    // it('Logo should be displayed', () => {
+    //     expect(LoginPage.ctiLogo).toBeVisible()
+    // });
 
     //Should display Sign Up text on the Sign Up Page
     it('Should display Sign Up text on the screen', () => {
@@ -26,18 +31,39 @@ describe('Sign Up page', () => {
     });
 
     // Sign Up page should have text containing "Welcome, Student Name"
-    it('Should display Welcome text before the Student Name on the screen', () => {
-        expect(SignupPage.welcomeText).toHaveTextContaining('Welcome,');
-    });
+    // it('Should display Welcome text before the Student Name on the screen', () => {
+    //     expect(SignupPage.welcomeText).toHaveTextContaining('Welcome,');
+    // });
+
+    // By default Signup button should be disabled
+    // it('Signup button should be disabled', () => {
+    //     SignupPage.signupBtn.waitForClickable({ reverse: true });
+    // });
+
+    // FIXME 
+    // Entered Password and Confirm Password should get visible
+    // it('Password and Confirm Password should get visible', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     browser.pause(2000);
+    //     SignupPage.passwordEyeIcon.click();
+    //     //SignupPage.passwordEyeIcon.isDisplayed();
+    //     //expect(SignupPage.passwordEyeIcon).isDisplayed();
+    //     browser.pause(2000);
+
+
+    //     SignupPage.confirmPasswordInput.addValue('123456');
+    //     SignupPage.passwordEyeIcon.click();
+
+    // });
 
     // Password should get generated and Set Pin page should get displayed
-    it('Password should get generated and Set Pin page should get displayed', () => {
-        SignupPage.passwordInput.addValue('12345');
-        SignupPage.confirmPasswordInput.addValue('12345');
-        SignupPage.signupBtn.click();
-        //browser.pause(2000);
-        expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
-    });
+    // it('Password should get generated and Set Pin page should get displayed', () => {
+    //     SignupPage.passwordInput.addValue('12345');
+    //     SignupPage.confirmPasswordInput.addValue('12345');
+    //     SignupPage.signupBtn.click();
+    //     //browser.pause(2000);
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
+    // });
 
     // ------------- THIS ONE LATER WILL BE MODIFIED -------------
     // Should throw error warning when enter different password in Password and Confirm Password field

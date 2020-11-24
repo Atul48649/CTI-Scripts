@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606224362126' stop='1606224373317'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1606224362126' status='failed' stop='1606224373316'>
+            <name>Login text should be visible</name>
+            <title>Login text should be visible</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`h3=login`) to be present
+                
+                Expected: "present"
+                Received: "not present"</message>
+                <stack-trace>Error: Expect $(`h3=login`) to be present
+                
+                Expected: "present"
+                Received: "not present"
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\specs\login.js:239:37)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

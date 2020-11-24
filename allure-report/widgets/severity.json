@@ -1,5 +1,45 @@
 [ {
-  "uid" : "14187fe2a8047bdc",
+  "uid" : "66a21570f4c3dd7",
+  "name" : "Student should get Login and Set Pin/Login With Pin Page should get displayed",
+  "time" : {
+    "start" : 1606200402139,
+    "stop" : 1606200404078,
+    "duration" : 1939
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65d042b48666c8f4",
+  "name" : "Should throw error message for Password field",
+  "time" : {
+    "start" : 1606200353480,
+    "stop" : 1606200366801,
+    "duration" : 13321
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2408d7a5a5e63952",
+  "name" : "While Login Skip setting Pin",
+  "time" : {
+    "start" : 1606206417488,
+    "stop" : 1606206420050,
+    "duration" : 2562
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a31f2d7793d06f1",
+  "name" : "Entered Password should get visible",
+  "time" : {
+    "start" : 1606200280990,
+    "stop" : 1606200288242,
+    "duration" : 7252
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5899ddf03fbcde73",
   "name" : "Should verify the title",
   "time" : {
     "start" : 1605874780777,
@@ -9,17 +49,17 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4b8f6685a92926f9",
-  "name" : "Password should get generated and Set Pin page should get displayed",
+  "uid" : "8ece4edcc6913f27",
+  "name" : "Login and setting Pin",
   "time" : {
-    "start" : 1605874783132,
-    "stop" : 1605874785017,
-    "duration" : 1885
+    "start" : 1606206088156,
+    "stop" : 1606206091482,
+    "duration" : 3326
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ff1927d5990f6b45",
+  "uid" : "b98cbd2014a90f2b",
   "name" : "Should display Welcome text before the Student Name on the screen",
   "time" : {
     "start" : 1605874782459,
@@ -29,12 +69,162 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f11d3bcece7bb544",
+  "uid" : "c1664618458e5415",
+  "name" : "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button",
+  "time" : {
+    "start" : 1606209973923,
+    "stop" : 1606209976928,
+    "duration" : 3005
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30ec60b9f4beb03a",
+  "name" : "Should throw error message when entered pin in Pin and Confirm Pin does not matches",
+  "time" : {
+    "start" : 1606206250023,
+    "stop" : 1606206252767,
+    "duration" : 2744
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10ee5a2a9abe95b0",
+  "name" : "Password should get generated and Set Pin page should get displayed",
+  "time" : {
+    "start" : 1605874783132,
+    "stop" : 1605874785017,
+    "duration" : 1885
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "302d3cfee101c2df",
+  "name" : "Should throw error message when entered pin in Pin field does not matches to the seted pin",
+  "time" : {
+    "start" : 1606207053417,
+    "stop" : 1606207056997,
+    "duration" : 3580
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61e531b3e355ad9b",
+  "name" : "Logo should be displayed",
+  "time" : {
+    "start" : 1606196735915,
+    "stop" : 1606196737076,
+    "duration" : 1161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0738eb0afc9ab3e",
+  "name" : "Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed",
+  "time" : {
+    "start" : 1606210537080,
+    "stop" : 1606210540179,
+    "duration" : 3099
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ffed786b14be6fd",
+  "name" : "\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\"",
+  "time" : {
+    "start" : 1606209877407,
+    "stop" : 1606209877998,
+    "duration" : 591
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6fb7022750ef859f",
+  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "time" : {
+    "start" : 1606210741146,
+    "stop" : 1606210744903,
+    "duration" : 3757
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de97ada91bbe9014",
+  "name" : "Logo should be displayed",
+  "time" : {
+    "start" : 1606212337452,
+    "stop" : 1606212339000,
+    "duration" : 1548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "308fce717bf862b",
   "name" : "Should display Sign Up text on the screen",
   "time" : {
     "start" : 1605874781785,
     "stop" : 1605874782459,
     "duration" : 674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87526160833d1667",
+  "name" : "Should throw error message while entering invalid pin and clicking on VERIFY PIN button(Pin setted earlier)",
+  "time" : {
+    "start" : 1606210039288,
+    "stop" : 1606210042448,
+    "duration" : 3160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "512c86bfff59b728",
+  "name" : "Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed",
+  "time" : {
+    "start" : 1606210338855,
+    "stop" : 1606210342615,
+    "duration" : 3760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d17e0ab535e8e37b",
+  "name" : "Signup button should be disabled",
+  "time" : {
+    "start" : 1606214365501,
+    "stop" : 1606214372400,
+    "duration" : 6899
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef497c64afc28d54",
+  "name" : "Student should get Login and Set Pin Page should get displayed",
+  "time" : {
+    "start" : 1606205965433,
+    "stop" : 1606205967892,
+    "duration" : 2459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "180dc018bda2d489",
+  "name" : "Student should get Login and Login With Pin Page should get displayed",
+  "time" : {
+    "start" : 1606205992342,
+    "stop" : 1606205994549,
+    "duration" : 2207
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2cf54d71eff7eb3e",
+  "name" : "Entered Email Id/ Phone Number in the input field should get cleared",
+  "time" : {
+    "start" : 1606197620895,
+    "stop" : 1606197626432,
+    "duration" : 5537
   },
   "status" : "passed",
   "severity" : "normal"

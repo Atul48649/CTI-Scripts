@@ -1,0 +1,58 @@
+{
+  "uid" : "9a7ce7665795cd6b",
+  "name" : "Should throw error message when entered pin in Pin field does not matches to the seted pin",
+  "fullName" : "Login page.Should throw error message when entered pin in Pin field does not matches to the seted pin",
+  "historyId" : "92c3f2147887dbbdf4b70c92b882ccaf",
+  "time" : {
+    "start" : 1606206784713,
+    "stop" : 1606206796257,
+    "duration" : 11544
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"",
+  "statusTrace" : "Error: Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\login.js:155:25)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should throw error message when entered pin in Pin field does not matches to the seted pin"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9a7ce7665795cd6b.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

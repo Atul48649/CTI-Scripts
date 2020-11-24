@@ -6,8 +6,16 @@ class LoginWithPinPage extends Page {
         return $('#pin');
     }
 
+    get eyeIcon(){
+        return $("//*[@id='root']/div/div/div/div/div/div[2]/form/div/span[2]/i");
+    }
+
     get verifyPinBtn(){
         return $('.login-btn');
+    }
+
+    get ctiLogo(){
+        return $("//img[@alt='CTI logo']");
     }
 
     get errorMessageLoginWithPin(){
@@ -17,6 +25,7 @@ class LoginWithPinPage extends Page {
     get loginWithPinText(){
         return $('h3=Login with Pin');
     }
+
 }
 
 module.exports = new LoginWithPinPage();

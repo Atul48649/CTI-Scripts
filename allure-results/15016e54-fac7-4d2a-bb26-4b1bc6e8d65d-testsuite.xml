@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606215770251' stop='1606215776098'>
+    <name>Sign Up page</name>
+    <title>Sign Up page</title>
+    <test-cases>
+        <test-case start='1606215770251' status='passed' stop='1606215776098'>
+            <name>Password and Confirm Password should get visible</name>
+            <title>Password and Confirm Password should get visible</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

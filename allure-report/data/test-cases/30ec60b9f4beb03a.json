@@ -1,0 +1,84 @@
+{
+  "uid" : "30ec60b9f4beb03a",
+  "name" : "Should throw error message when entered pin in Pin and Confirm Pin does not matches",
+  "fullName" : "Login page.Should throw error message when entered pin in Pin and Confirm Pin does not matches",
+  "historyId" : "1524c46c02ac79e5b48f5bc0d6d4c07f",
+  "time" : {
+    "start" : 1606206250023,
+    "stop" : 1606206252767,
+    "duration" : 2744
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should throw error message when entered pin in Pin and Confirm Pin does not matches"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5cec829e8114b3e7",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"",
+      "time" : {
+        "start" : 1606206206582,
+        "stop" : 1606206218000,
+        "duration" : 11418
+      }
+    }, {
+      "uid" : "643927615a921796",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606206147668,
+        "stop" : 1606206160064,
+        "duration" : 12396
+      }
+    }, {
+      "uid" : "b00e77966fd64a8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606200558269,
+        "stop" : 1606200560843,
+        "duration" : 2574
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "30ec60b9f4beb03a.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}
