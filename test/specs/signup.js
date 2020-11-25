@@ -1,7 +1,5 @@
 const SignupPage = require('../pages/signup.page');
 const SetPinPage = require('../pages/setpin.page');
-// const LoginWithPinPage = require('../pages/loginwithpin.page');
-// const StudentDashboard = require('../pages/studentdashboard.page');
 const LoginPage = require('../pages/login.page');
 const LoginWithPinPage = require('../pages/loginwithpin.page');
 const StudentDashboardPage = require('../pages/studentdashboard.page');
@@ -26,9 +24,9 @@ describe('Sign Up page', () => {
     // });
 
     //Should display Sign Up text on the Sign Up Page
-    it('Should display Sign Up text on the screen', () => {
-        expect(SignupPage.signupText).toBePresent();
-    });
+    // it('Should display Sign Up text on the screen', () => {
+    //     expect(SignupPage.signupText).toBePresent();
+    // });
 
     // Sign Up page should have text containing "Welcome, Student Name"
     // it('Should display Welcome text before the Student Name on the screen', () => {
@@ -42,19 +40,21 @@ describe('Sign Up page', () => {
 
     // FIXME 
     // Entered Password and Confirm Password should get visible
-    // it('Password and Confirm Password should get visible', () => {
-    //     SignupPage.passwordInput.addValue('12345');
-    //     browser.pause(2000);
-    //     SignupPage.passwordEyeIcon.click();
-    //     //SignupPage.passwordEyeIcon.isDisplayed();
-    //     //expect(SignupPage.passwordEyeIcon).isDisplayed();
-    //     browser.pause(2000);
+    it('Password and Confirm Password should get visible', () => {
+        SignupPage.passwordInput.addValue('12345');
+        browser.pause(2000);
+        console.log(SignupPage.passwordInput.getValue());
+        SignupPage.passwordEyeIcon.click();
+        //SignupPage.passwordEyeIcon.isDisplayed();
+        console.log(SignupPage.passwordInput.getValue());
+        expect(SignupPage.passwordInput.getValue()).toBeDisplayed();
+        browser.pause(2000);
 
 
-    //     SignupPage.confirmPasswordInput.addValue('123456');
-    //     SignupPage.passwordEyeIcon.click();
+        // SignupPage.confirmPasswordInput.addValue('123456');
+        // SignupPage.passwordEyeIcon.click();
 
-    // });
+    });
 
     // Password should get generated and Set Pin page should get displayed
     // it('Password should get generated and Set Pin page should get displayed', () => {
@@ -164,7 +164,5 @@ describe('Sign Up page', () => {
     //     StudentDashboardPage.signOutBtn.click();
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
     // });
-
-    // ------------- WORKING FINE TILL HERE -------------
     
 });

@@ -1,0 +1,64 @@
+{
+  "uid" : "174d33084c749b18",
+  "name" : "Enter Pin button should be disabled",
+  "fullName" : "Login page.Enter Pin button should be disabled",
+  "historyId" : "4cbdbd001b2a6d8403fda173621dc349",
+  "time" : {
+    "start" : 1606288194854,
+    "stop" : 1606288205193,
+    "duration" : 10339
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call addValue on element with selector \"#email\" because element wasn't found",
+  "statusTrace" : "Error: Can't call addValue on element with selector \"#email\" because element wasn't found\n                    at Object.implicitWait [as default] (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\utils\\implicitWait.js:26:19)\n                    at Element.runCommandWithHooks (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:65:24)\n                    at Element.wrapCommandFn (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:44:44)\n                    at Element.elementErrorHandlerCallback (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\middlewares.js:34:12)\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\login.js:342:37)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Enter Pin button should be disabled"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "174d33084c749b18.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

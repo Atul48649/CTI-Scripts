@@ -1,0 +1,58 @@
+{
+  "uid" : "7050a67490638f25",
+  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "fullName" : "Login page.Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "historyId" : "123457a957d001694b2e91291417186a",
+  "time" : {
+    "start" : 1606200716445,
+    "stop" : 1606200725219,
+    "duration" : 8774
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element click intercepted: Element <button type=\"submit\" class=\"btn bg-active text-white mt-4 login-btn btn-disabled disabled\">...</button> is not clickable at point (959, 327). Other element would receive the click: <form class=\"form-width-inherit\">...</form>\n                  (Session info: chrome=86.0.4240.198)",
+  "statusTrace" : "element click intercepted: Element <button type=\"submit\" class=\"btn bg-active text-white mt-4 login-btn btn-disabled disabled\">...</button> is not clickable at point (959, 327). Other element would receive the click: <form class=\"form-width-inherit\">...</form>\n                  (Session info: chrome=86.0.4240.198)\n                    at Object.getErrorFromResponseBody (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriver\\build\\utils.js:94:12)\n                    at WebDriverRequest._request (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriver\\build\\request.js:133:31)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\middlewares.js:17:32)\n                    at async Element.elementErrorHandlerCallbackFn (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\middlewares.js:30:28)\n                    at async Element.runCommandWithHooks (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:70:25)\n                    at Element.runCommandWithHooks (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:65:24)\n                    at Element.wrapCommandFn (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:44:44)\n                    at Element.elementErrorHandlerCallback (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\middlewares.js:34:12)\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\login.js:129:39)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7050a67490638f25.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

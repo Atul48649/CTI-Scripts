@@ -1,0 +1,75 @@
+{
+  "uid" : "f17b094792199e42",
+  "name" : "Entered Email Id/ Phone Number in the input field should get cleared",
+  "fullName" : "Login page.Entered Email Id/ Phone Number in the input field should get cleared",
+  "historyId" : "da4b05c017086a1fcedd8926332cfa65",
+  "time" : {
+    "start" : 1606197620895,
+    "stop" : 1606197626432,
+    "duration" : 5537
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Entered Email Id/ Phone Number in the input field should get cleared"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8b5470b6b922755d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606197503368,
+        "stop" : 1606197508710,
+        "duration" : 5342
+      }
+    }, {
+      "uid" : "ebb2603d40b828aa",
+      "status" : "broken",
+      "statusDetails" : "Can't call click on element with selector \".fa-times-circle\" because element wasn't found",
+      "time" : {
+        "start" : 1606197347341,
+        "stop" : 1606197360995,
+        "duration" : 13654
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f17b094792199e42.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

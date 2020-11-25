@@ -1,0 +1,67 @@
+{
+  "uid" : "5cbe54f733ee0907",
+  "name" : "Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed",
+  "fullName" : "Login page.Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed",
+  "historyId" : "3c8b4cbb464416829b10575d91657bc0",
+  "time" : {
+    "start" : 1606210338855,
+    "stop" : 1606210342615,
+    "duration" : 3760
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1e1cbb9a591501c0",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <button type=\"submit\" class=\"btn bg-active text-white mt-4 login-btn btn-disabled disabled\">...</button> is not clickable at point (959, 327). Other element would receive the click: <form class=\"form-width-inherit\">...</form>\n                  (Session info: chrome=86.0.4240.198)",
+      "time" : {
+        "start" : 1606210176163,
+        "stop" : 1606210183188,
+        "duration" : 7025
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5cbe54f733ee0907.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

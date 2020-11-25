@@ -1,0 +1,139 @@
+{
+  "uid" : "979c9accd7909dfc",
+  "name" : "Logo should be displayed",
+  "fullName" : "Login page.Logo should be displayed",
+  "historyId" : "94fa4f7585caf183f3d77d639405ccf1",
+  "time" : {
+    "start" : 1606288160314,
+    "stop" : 1606288164259,
+    "duration" : 3945
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logo should be displayed"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "854faeb11983a5cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287749849,
+        "stop" : 1606287750868,
+        "duration" : 1019
+      }
+    }, {
+      "uid" : "50bde672c41dc494",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287726470,
+        "stop" : 1606287727907,
+        "duration" : 1437
+      }
+    }, {
+      "uid" : "635b80d253449a0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287664037,
+        "stop" : 1606287667066,
+        "duration" : 3029
+      }
+    }, {
+      "uid" : "67ffcd00326840a5",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`//img[@alt='CTI log']`) to be visible\n                \n                Expected: \"visible\"\n                Received: \"not visible\"",
+      "time" : {
+        "start" : 1606287604594,
+        "stop" : 1606287616348,
+        "duration" : 11754
+      }
+    }, {
+      "uid" : "ddf310f8ba3e1413",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287183631,
+        "stop" : 1606287184614,
+        "duration" : 983
+      }
+    }, {
+      "uid" : "ea19ba098e9f9f7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287129279,
+        "stop" : 1606287130466,
+        "duration" : 1187
+      }
+    }, {
+      "uid" : "466cc5f17771fa7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287072312,
+        "stop" : 1606287073571,
+        "duration" : 1259
+      }
+    }, {
+      "uid" : "790791386fbfb3e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287037102,
+        "stop" : 1606287039340,
+        "duration" : 2238
+      }
+    }, {
+      "uid" : "b11665befd898bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606196735915,
+        "stop" : 1606196737076,
+        "duration" : 1161
+      }
+    }, {
+      "uid" : "746594d0a8e3dca9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606196662800,
+        "stop" : 1606196664009,
+        "duration" : 1209
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "979c9accd7909dfc.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

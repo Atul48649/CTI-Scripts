@@ -1,0 +1,56 @@
+{
+  "uid" : "721906745393dcd3",
+  "name" : "open the url and login",
+  "fullName" : "Set Pin page.open the url and login",
+  "historyId" : "91f26f3e82ff4a298c8e70da2318aecd",
+  "time" : {
+    "start" : 1606218601280,
+    "stop" : 1606218603619,
+    "duration" : 2339
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "open the url and login"
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "721906745393dcd3.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

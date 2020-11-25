@@ -1,0 +1,64 @@
+{
+  "uid" : "1727145c79c5ca8d",
+  "name" : "\"before each\" hook for \"Logo should be displayed\"",
+  "fullName" : "Set Pin page.\"before each\" hook for \"Logo should be displayed\"",
+  "historyId" : "29e4bb9d92189e3f504d98c91c68ead4",
+  "time" : {
+    "start" : 1606220555356,
+    "stop" : 1606220565591,
+    "duration" : 10235
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call addValue on element with selector \"#email\" because element wasn't found",
+  "statusTrace" : "Error: Can't call addValue on element with selector \"#email\" because element wasn't found\n                    at Object.implicitWait [as default] (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\utils\\implicitWait.js:26:19)\n                    at Element.runCommandWithHooks (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:65:24)\n                    at Element.wrapCommandFn (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:44:44)\n                    at Element.elementErrorHandlerCallback (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\webdriverio\\build\\middlewares.js:34:12)\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\setpin.js:8:37)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before each\" hook for \"Logo should be displayed\""
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1727145c79c5ca8d.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

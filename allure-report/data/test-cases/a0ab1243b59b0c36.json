@@ -1,0 +1,67 @@
+{
+  "uid" : "a0ab1243b59b0c36",
+  "name" : "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button",
+  "fullName" : "Login page.Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button",
+  "historyId" : "74bc6cafab27670ac3159056c055ac88",
+  "time" : {
+    "start" : 1606209973923,
+    "stop" : 1606209976928,
+    "duration" : 3005
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "774bcbab2eb55619",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/sign/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/\"",
+      "time" : {
+        "start" : 1606209893442,
+        "stop" : 1606209909379,
+        "duration" : 15937
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a0ab1243b59b0c36.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

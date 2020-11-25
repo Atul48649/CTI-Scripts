@@ -1,0 +1,56 @@
+{
+  "uid" : "9158537ce208c85",
+  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "fullName" : "Login page.Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "historyId" : "123457a957d001694b2e91291417186a",
+  "time" : {
+    "start" : 1606206948776,
+    "stop" : 1606206952603,
+    "duration" : 3827
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9158537ce208c85.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

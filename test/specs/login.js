@@ -9,9 +9,9 @@ describe('Login page', () => {
         LoginPage.open();
     });
 
-    // afterEach(() => {
-    //     browser.refresh();
-    // });
+    afterEach(() => {
+        browser.refresh();
+    });
     
 
     //  =========================== LOGIN ===============================
@@ -21,9 +21,10 @@ describe('Login page', () => {
     //     expect(LoginPage.ctiLogo).toBeVisible()
     // });
 
-    it('Login text should be visible', () => {
-        expect(LoginPage.loginText).toBeDisplayed();
-    });
+    // Should display Login text on the Login Page
+    // it('Login text should be visible', () => {
+    //     expect(LoginPage.loginText).toBeDisplayed();
+    // });
 
     // Entered Email Id/ Phone Number in the input field should get cleared
     // it('Entered Email Id/ Phone Number in the input field should get cleared', () => {
@@ -33,14 +34,15 @@ describe('Login page', () => {
     //     browser.pause(2000);// Using this so that i can see the exection a bit slower, This can be removed
     // });
 
+    // FIXME
     // Entered Password should get visible
-    // it('Entered Password should get visible', () => {
-    //     browser.pause(2000);
-    //     LoginPage.passwordInput.addValue('123654789');
-    //     LoginPage.eyeIcon.click();
-    //     expect(LoginPage.passwordInput).toBeDisplayed();
-    //     browser.pause(4000);
-    // });
+    it('Entered Password should get visible', () => {
+        browser.pause(2000);
+        LoginPage.passwordInput.addValue('123654789');
+        LoginPage.eyeIcon.click();
+        expect(LoginPage.passwordInput).toBeDisplayed();
+        browser.pause(4000);
+    });
 
     // Verifying Title of the Page
     // it('Should verify the title of the page', () => {
@@ -265,7 +267,7 @@ describe('Login page', () => {
     // });
 
     // ------------- WORKING FINE TILL HERE -------------
-
+    
     //  Not so imp test script
     //  When entering valid login credentials and marking remember me as checked
     // it('User gets login and after sign out their credentials should be prefilled when go to Login page', () => {
@@ -280,6 +282,70 @@ describe('Login page', () => {
     // it('checkbox should get checked', () => {
     //     LoginPage.checkboxInput.click();
     //     browser.pause(10000);
+    // });
+
+    // ===========================SET PIN================================
+
+     // Should verify the title
+    //  it('Should verify the title', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     browser.pause(2000);
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+
+    //     expect(browser).toHaveTitle('CTI');
+    //     console.log("Should verify the title");
+    // });
+
+    // Logo of CTI should be present and visible
+    // it('Logo should be displayed', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+
+    //     expect(SetPinPage.ctiLogo).toBeVisible()
+    // });
+
+    // Should display Set Pin text on the Set Pin Screen
+    // it('Should display Set Pin text on the screen', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+
+    //     expect(SetPinPage.setpinText).toBeDisplayed()
+    // });
+
+    // Should display "2 step verification" text on the Set Pin Screen
+    // it('Should display Set Pin text on the screen', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+
+    //     expect(SetPinPage.twoStepVerificationText).toBeDisplayed()
+    // });
+
+    // Should display "You can add 2 step verification to login into your account" text on the Set Pin Screen
+    // it('Should display Set Pin text on the screen', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+
+    //     expect(SetPinPage.paragraphText).toBeDisplayed();
+    // });
+
+    // By default ENTER PIN button should be disabled
+    // it('Enter Pin button should be disabled', () => {
+    //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+    //     LoginPage.passwordInput.addValue('12345');
+    //     LoginPage.loginBtn.click();
+    //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+
+    //     SetPinPage.enterPinBtn.waitForClickable({ reverse: true });
     // });
 
 });

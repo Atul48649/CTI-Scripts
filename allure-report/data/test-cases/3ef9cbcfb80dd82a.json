@@ -1,0 +1,58 @@
+{
+  "uid" : "3ef9cbcfb80dd82a",
+  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "fullName" : "Login page.Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "historyId" : "123457a957d001694b2e91291417186a",
+  "time" : {
+    "start" : 1606203438313,
+    "stop" : 1606203440289,
+    "duration" : 1976
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "notification is not defined",
+  "statusTrace" : "ReferenceError: notification is not defined\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\login.js:127:9)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3ef9cbcfb80dd82a.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

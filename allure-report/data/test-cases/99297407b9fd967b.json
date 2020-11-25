@@ -1,0 +1,99 @@
+{
+  "uid" : "99297407b9fd967b",
+  "name" : "Should display Set Pin text on the screen",
+  "fullName" : "Set Pin page.Should display Set Pin text on the screen",
+  "historyId" : "bfa6eac8c88b67ebf48a2f2266216f66",
+  "time" : {
+    "start" : 1606219733504,
+    "stop" : 1606219734123,
+    "duration" : 619
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should display Set Pin text on the screen"
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ba231c53ce6704f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218939377,
+        "stop" : 1606218939453,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "338111239b0e7f1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218780484,
+        "stop" : 1606218780589,
+        "duration" : 105
+      }
+    }, {
+      "uid" : "44f84eb6028bfd69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218603663,
+        "stop" : 1606218603759,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "ab64657a36e623c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218360012,
+        "stop" : 1606218360106,
+        "duration" : 94
+      }
+    }, {
+      "uid" : "c0d414a25afeec5e",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3=Set Pin`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1606218220198,
+        "stop" : 1606218234843,
+        "duration" : 14645
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "99297407b9fd967b.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

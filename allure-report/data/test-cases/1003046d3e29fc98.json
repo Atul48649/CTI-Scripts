@@ -1,0 +1,56 @@
+{
+  "uid" : "1003046d3e29fc98",
+  "name" : "Entered Password should get visible",
+  "fullName" : "Login page.Entered Password should get visible",
+  "historyId" : "5d0a4cb20daa50a25767419df688194",
+  "time" : {
+    "start" : 1606200129174,
+    "stop" : 1606200136591,
+    "duration" : 7417
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Entered Password should get visible"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1003046d3e29fc98.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

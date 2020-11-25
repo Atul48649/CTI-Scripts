@@ -1,0 +1,66 @@
+{
+  "uid" : "8a34566e2aea1319",
+  "name" : "Login and setting Pin",
+  "fullName" : "Login page.Login and setting Pin",
+  "historyId" : "d691479de6ca500f6e38bdf49d5e5dfd",
+  "time" : {
+    "start" : 1606206088156,
+    "stop" : 1606206091482,
+    "duration" : 3326
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login and setting Pin"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "779424b5308c0d02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606200488159,
+        "stop" : 1606200491307,
+        "duration" : 3148
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8a34566e2aea1319.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

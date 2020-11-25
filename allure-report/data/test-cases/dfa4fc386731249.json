@@ -1,0 +1,349 @@
+{
+  "uid" : "dfa4fc386731249",
+  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "fullName" : "Login page.Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "historyId" : "123457a957d001694b2e91291417186a",
+  "time" : {
+    "start" : 1606210741146,
+    "stop" : 1606210744903,
+    "duration" : 3757
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e771f7351707c199",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"",
+      "time" : {
+        "start" : 1606210656412,
+        "stop" : 1606210670763,
+        "duration" : 14351
+      }
+    }, {
+      "uid" : "9158537ce208c85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606206948776,
+        "stop" : 1606206952603,
+        "duration" : 3827
+      }
+    }, {
+      "uid" : "4ba833139493fe9c",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"",
+      "time" : {
+        "start" : 1606205078066,
+        "stop" : 1606205089356,
+        "duration" : 11290
+      }
+    }, {
+      "uid" : "de5020a4245b92d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606205062333,
+        "stop" : 1606205066054,
+        "duration" : 3721
+      }
+    }, {
+      "uid" : "2c145af11ffa5a1",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606204854108,
+        "stop" : 1606204866534,
+        "duration" : 12426
+      }
+    }, {
+      "uid" : "754ae4d18eeb86ce",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606204793085,
+        "stop" : 1606204805691,
+        "duration" : 12606
+      }
+    }, {
+      "uid" : "97b9334715a76fff",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606204691124,
+        "stop" : 1606204703763,
+        "duration" : 12639
+      }
+    }, {
+      "uid" : "4f0eda2b4886c",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606204621997,
+        "stop" : 1606204633981,
+        "duration" : 11984
+      }
+    }, {
+      "uid" : "dfb6061c2933c2d5",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606204592474,
+        "stop" : 1606204604631,
+        "duration" : 12157
+      }
+    }, {
+      "uid" : "cba15b1d03b4ff6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606204506996,
+        "stop" : 1606204510658,
+        "duration" : 3662
+      }
+    }, {
+      "uid" : "671cf894956665a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606204153961,
+        "stop" : 1606204157157,
+        "duration" : 3196
+      }
+    }, {
+      "uid" : "a1125c64e2d849e9",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606204050004,
+        "stop" : 1606204055522,
+        "duration" : 5518
+      }
+    }, {
+      "uid" : "7c9d61f857d7137c",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606203554306,
+        "stop" : 1606203559875,
+        "duration" : 5569
+      }
+    }, {
+      "uid" : "856a83838613855c",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606203473323,
+        "stop" : 1606203485264,
+        "duration" : 11941
+      }
+    }, {
+      "uid" : "3ef9cbcfb80dd82a",
+      "status" : "broken",
+      "statusDetails" : "notification is not defined",
+      "time" : {
+        "start" : 1606203438313,
+        "stop" : 1606203440289,
+        "duration" : 1976
+      }
+    }, {
+      "uid" : "5ec00557030f06e1",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606203376586,
+        "stop" : 1606203389901,
+        "duration" : 13315
+      }
+    }, {
+      "uid" : "e0765710079ae05a",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 10000ms",
+      "time" : {
+        "start" : 1606203140997,
+        "stop" : 1606203153559,
+        "duration" : 12562
+      }
+    }, {
+      "uid" : "bf8569d19fe241eb",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 10000ms",
+      "time" : {
+        "start" : 1606203096931,
+        "stop" : 1606203108954,
+        "duration" : 12023
+      }
+    }, {
+      "uid" : "dfba2da61ccf626e",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606203069018,
+        "stop" : 1606203081613,
+        "duration" : 12595
+      }
+    }, {
+      "uid" : "a228ae7a302ae006",
+      "status" : "failed",
+      "statusDetails" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/student/dashboard\"\n                Received: \"http://cti-techoon.azurewebsites.net/sign/pin\"",
+      "time" : {
+        "start" : 1606203000935,
+        "stop" : 1606203015134,
+        "duration" : 14199
+      }
+    }, {
+      "uid" : "618ef69b690e8989",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 5000ms",
+      "time" : {
+        "start" : 1606202973365,
+        "stop" : 1606202980977,
+        "duration" : 7612
+      }
+    }, {
+      "uid" : "10a0c4dbade5edae",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606202897240,
+        "stop" : 1606202902808,
+        "duration" : 5568
+      }
+    }, {
+      "uid" : "da3f195490d55779",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606202406504,
+        "stop" : 1606202411585,
+        "duration" : 5081
+      }
+    }, {
+      "uid" : "eaf623747939f014",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#pin\" because element wasn't found",
+      "time" : {
+        "start" : 1606202287678,
+        "stop" : 1606202299228,
+        "duration" : 11550
+      }
+    }, {
+      "uid" : "70ce3a9614b7dd06",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606202134394,
+        "stop" : 1606202146635,
+        "duration" : 12241
+      }
+    }, {
+      "uid" : "4d2c092a54270892",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606202094907,
+        "stop" : 1606202107349,
+        "duration" : 12442
+      }
+    }, {
+      "uid" : "9c1149f81ad8b6b2",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606202043165,
+        "stop" : 1606202048691,
+        "duration" : 5526
+      }
+    }, {
+      "uid" : "6e48fad05c512008",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606201917728,
+        "stop" : 1606201930511,
+        "duration" : 12783
+      }
+    }, {
+      "uid" : "c7fa2546c2bd0619",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606201634903,
+        "stop" : 1606201639494,
+        "duration" : 4591
+      }
+    }, {
+      "uid" : "89265cf3fe325ec2",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <button type=\"submit\" class=\"btn bg-active text-white mt-4 login-btn btn-disabled disabled\">...</button> is not clickable at point (959, 327). Other element would receive the click: <form class=\"form-width-inherit\">...</form>\n                  (Session info: chrome=86.0.4240.198)",
+      "time" : {
+        "start" : 1606201521696,
+        "stop" : 1606201544100,
+        "duration" : 22404
+      }
+    }, {
+      "uid" : "3a999e64dece39b1",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <button type=\"submit\" class=\"btn bg-active text-white mt-4 login-btn btn-disabled disabled\">...</button> is not clickable at point (959, 327). Other element would receive the click: <form class=\"form-width-inherit\">...</form>\n                  (Session info: chrome=86.0.4240.198)",
+      "time" : {
+        "start" : 1606201394573,
+        "stop" : 1606201406627,
+        "duration" : 12054
+      }
+    }, {
+      "uid" : "614a8f7b257e62cc",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#confirmPin\" because element wasn't found",
+      "time" : {
+        "start" : 1606200912693,
+        "stop" : 1606200925176,
+        "duration" : 12483
+      }
+    }, {
+      "uid" : "7050a67490638f25",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <button type=\"submit\" class=\"btn bg-active text-white mt-4 login-btn btn-disabled disabled\">...</button> is not clickable at point (959, 327). Other element would receive the click: <form class=\"form-width-inherit\">...</form>\n                  (Session info: chrome=86.0.4240.198)",
+      "time" : {
+        "start" : 1606200716445,
+        "stop" : 1606200725219,
+        "duration" : 8774
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dfa4fc386731249.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

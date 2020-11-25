@@ -6,7 +6,7 @@ class LoginWithPinPage extends Page {
         return $('#pin');
     }
 
-    get eyeIcon(){
+    get pinEyeIcon(){
         return $("//*[@id='root']/div/div/div/div/div/div[2]/form/div/span[2]/i");
     }
 

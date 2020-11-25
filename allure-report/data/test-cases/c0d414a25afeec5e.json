@@ -1,0 +1,58 @@
+{
+  "uid" : "c0d414a25afeec5e",
+  "name" : "Should display Set Pin text on the screen",
+  "fullName" : "Set Pin page.Should display Set Pin text on the screen",
+  "historyId" : "bfa6eac8c88b67ebf48a2f2266216f66",
+  "time" : {
+    "start" : 1606218220198,
+    "stop" : 1606218234843,
+    "duration" : 14645
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect $(`h3=Set Pin`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+  "statusTrace" : "Error: Expect $(`h3=Set Pin`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\setpin.js:24:39)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should display Set Pin text on the screen"
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c0d414a25afeec5e.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

@@ -1,115 +1,5 @@
 [ {
-  "uid" : "87526160833d1667",
-  "name" : "Should throw error message while entering invalid pin and clicking on VERIFY PIN button(Pin setted earlier)",
-  "time" : {
-    "start" : 1606210039288,
-    "stop" : 1606210042448,
-    "duration" : 3160
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "180dc018bda2d489",
-  "name" : "Student should get Login and Login With Pin Page should get displayed",
-  "time" : {
-    "start" : 1606205992342,
-    "stop" : 1606205994549,
-    "duration" : 2207
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "de97ada91bbe9014",
-  "name" : "Logo should be displayed",
-  "time" : {
-    "start" : 1606212337452,
-    "stop" : 1606212339000,
-    "duration" : 1548
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2408d7a5a5e63952",
-  "name" : "While Login Skip setting Pin",
-  "time" : {
-    "start" : 1606206417488,
-    "stop" : 1606206420050,
-    "duration" : 2562
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d17e0ab535e8e37b",
-  "name" : "Signup button should be disabled",
-  "time" : {
-    "start" : 1606214365501,
-    "stop" : 1606214372400,
-    "duration" : 6899
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e0738eb0afc9ab3e",
-  "name" : "Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed",
-  "time" : {
-    "start" : 1606210537080,
-    "stop" : 1606210540179,
-    "duration" : 3099
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c1664618458e5415",
-  "name" : "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button",
-  "time" : {
-    "start" : 1606209973923,
-    "stop" : 1606209976928,
-    "duration" : 3005
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5899ddf03fbcde73",
-  "name" : "Should verify the title",
-  "time" : {
-    "start" : 1605874780777,
-    "stop" : 1605874781785,
-    "duration" : 1008
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8ece4edcc6913f27",
-  "name" : "Login and setting Pin",
-  "time" : {
-    "start" : 1606206088156,
-    "stop" : 1606206091482,
-    "duration" : 3326
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "302d3cfee101c2df",
-  "name" : "Should throw error message when entered pin in Pin field does not matches to the seted pin",
-  "time" : {
-    "start" : 1606207053417,
-    "stop" : 1606207056997,
-    "duration" : 3580
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "61e531b3e355ad9b",
-  "name" : "Logo should be displayed",
-  "time" : {
-    "start" : 1606196735915,
-    "stop" : 1606196737076,
-    "duration" : 1161
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6ffed786b14be6fd",
+  "uid" : "7f5d70cdd3ab5a4c",
   "name" : "\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\"",
   "time" : {
     "start" : 1606209877407,
@@ -119,7 +9,57 @@
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "10ee5a2a9abe95b0",
+  "uid" : "d4ddd3cb842c05d8",
+  "name" : "Should display Set Pin text on the screen",
+  "time" : {
+    "start" : 1606288164260,
+    "stop" : 1606288194854,
+    "duration" : 30594
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b47035e029edbbf3",
+  "name" : "Should verify the title",
+  "time" : {
+    "start" : 1606288149076,
+    "stop" : 1606288160313,
+    "duration" : 11237
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a20cba6ee788248",
+  "name" : "While Login Skip setting Pin",
+  "time" : {
+    "start" : 1606206417488,
+    "stop" : 1606206420050,
+    "duration" : 2562
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "127425fc20231214",
+  "name" : "Should display Sign Up text on the screen",
+  "time" : {
+    "start" : 1606224490879,
+    "stop" : 1606224492447,
+    "duration" : 1568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6855aa80d8cc9e6",
+  "name" : "Should verify the title",
+  "time" : {
+    "start" : 1606220684977,
+    "stop" : 1606220686658,
+    "duration" : 1681
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "857926c2dc9b617",
   "name" : "Password should get generated and Set Pin page should get displayed",
   "time" : {
     "start" : 1605874783132,
@@ -129,7 +69,37 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "65d042b48666c8f4",
+  "uid" : "e232633434f61d08",
+  "name" : "Logo should be displayed",
+  "time" : {
+    "start" : 1606212337452,
+    "stop" : 1606212339000,
+    "duration" : 1548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "661a2c2f08ed2032",
+  "name" : "\"before each\" hook for \"Should display Set Pin text on the screen\"",
+  "time" : {
+    "start" : 1606220498127,
+    "stop" : 1606220509790,
+    "duration" : 11663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1727145c79c5ca8d",
+  "name" : "\"before each\" hook for \"Logo should be displayed\"",
+  "time" : {
+    "start" : 1606220555356,
+    "stop" : 1606220565591,
+    "duration" : 10235
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "38b15a5bb1543bff",
   "name" : "Should throw error message for Password field",
   "time" : {
     "start" : 1606200353480,
@@ -139,17 +109,47 @@
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "6fb7022750ef859f",
-  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "uid" : "e6fb25eb60ad938f",
+  "name" : "Logo should be displayed",
   "time" : {
-    "start" : 1606210741146,
-    "stop" : 1606210744903,
-    "duration" : 3757
+    "start" : 1606220686658,
+    "stop" : 1606220687373,
+    "duration" : 715
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2cf54d71eff7eb3e",
+  "uid" : "1fb3bd87cd8db895",
+  "name" : "Login text should be visible",
+  "time" : {
+    "start" : 1606287750868,
+    "stop" : 1606287751051,
+    "duration" : 183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c17216dba6a70b5",
+  "name" : "Password and Confirm Password should get visible",
+  "time" : {
+    "start" : 1606216145336,
+    "stop" : 1606216151197,
+    "duration" : 5861
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15b98b0a0f7c177f",
+  "name" : "Student should get Login and Set Pin Page should get displayed",
+  "time" : {
+    "start" : 1606205965433,
+    "stop" : 1606205967892,
+    "duration" : 2459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f17b094792199e42",
   "name" : "Entered Email Id/ Phone Number in the input field should get cleared",
   "time" : {
     "start" : 1606197620895,
@@ -159,7 +159,57 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3a31f2d7793d06f1",
+  "uid" : "979c9accd7909dfc",
+  "name" : "Logo should be displayed",
+  "time" : {
+    "start" : 1606288160314,
+    "stop" : 1606288164259,
+    "duration" : 3945
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "705769f4cea27840",
+  "name" : "Should verify the title",
+  "time" : {
+    "start" : 1605874780777,
+    "stop" : 1605874781785,
+    "duration" : 1008
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0ab1243b59b0c36",
+  "name" : "Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button",
+  "time" : {
+    "start" : 1606209973923,
+    "stop" : 1606209976928,
+    "duration" : 3005
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62d17ed325ef86ff",
+  "name" : "\"after each\" hook for \"Should display Set Pin text on the screen\"",
+  "time" : {
+    "start" : 1606220687374,
+    "stop" : 1606220698188,
+    "duration" : 10814
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2e29232761cacea7",
+  "name" : "Should throw error message while entering invalid pin and clicking on VERIFY PIN button(Pin setted earlier)",
+  "time" : {
+    "start" : 1606210039288,
+    "stop" : 1606210042448,
+    "duration" : 3160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95f37c1eeeebac9c",
   "name" : "Entered Password should get visible",
   "time" : {
     "start" : 1606200280990,
@@ -169,47 +219,47 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "308fce717bf862b",
-  "name" : "Should display Sign Up text on the screen",
+  "uid" : "8a34566e2aea1319",
+  "name" : "Login and setting Pin",
   "time" : {
-    "start" : 1605874781785,
-    "stop" : 1605874782459,
-    "duration" : 674
+    "start" : 1606206088156,
+    "stop" : 1606206091482,
+    "duration" : 3326
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "512c86bfff59b728",
-  "name" : "Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed",
+  "uid" : "a33b87af6186dcde",
+  "name" : "Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed",
   "time" : {
-    "start" : 1606210338855,
-    "stop" : 1606210342615,
-    "duration" : 3760
+    "start" : 1606210537080,
+    "stop" : 1606210540179,
+    "duration" : 3099
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "30ec60b9f4beb03a",
-  "name" : "Should throw error message when entered pin in Pin and Confirm Pin does not matches",
+  "uid" : "3e287e896b18eb64",
+  "name" : "Student should get Login and Login With Pin Page should get displayed",
   "time" : {
-    "start" : 1606206250023,
-    "stop" : 1606206252767,
-    "duration" : 2744
+    "start" : 1606205992342,
+    "stop" : 1606205994549,
+    "duration" : 2207
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "66a21570f4c3dd7",
-  "name" : "Student should get Login and Set Pin/Login With Pin Page should get displayed",
+  "uid" : "adececa9646c5e66",
+  "name" : "Hi",
   "time" : {
-    "start" : 1606200402139,
-    "stop" : 1606200404078,
-    "duration" : 1939
+    "start" : 1606215248078,
+    "stop" : 1606215264814,
+    "duration" : 16736
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b98cbd2014a90f2b",
+  "uid" : "8a1b696bddee98e0",
   "name" : "Should display Welcome text before the Student Name on the screen",
   "time" : {
     "start" : 1605874782459,
@@ -219,12 +269,92 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ef497c64afc28d54",
-  "name" : "Student should get Login and Set Pin Page should get displayed",
+  "uid" : "e3b06d34073a4cfc",
+  "name" : "Signup button should be disabled",
   "time" : {
-    "start" : 1606205965433,
-    "stop" : 1606205967892,
-    "duration" : 2459
+    "start" : 1606220172282,
+    "stop" : 1606220173209,
+    "duration" : 927
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99297407b9fd967b",
+  "name" : "Should display Set Pin text on the screen",
+  "time" : {
+    "start" : 1606219733504,
+    "stop" : 1606219734123,
+    "duration" : 619
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85a2cbddfb01f24f",
+  "name" : "open the url and login",
+  "time" : {
+    "start" : 1606218927964,
+    "stop" : 1606218939340,
+    "duration" : 11376
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "174d33084c749b18",
+  "name" : "Enter Pin button should be disabled",
+  "time" : {
+    "start" : 1606288194854,
+    "stop" : 1606288205193,
+    "duration" : 10339
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5cbe54f733ee0907",
+  "name" : "Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed",
+  "time" : {
+    "start" : 1606210338855,
+    "stop" : 1606210342615,
+    "duration" : 3760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dfa4fc386731249",
+  "name" : "Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard",
+  "time" : {
+    "start" : 1606210741146,
+    "stop" : 1606210744903,
+    "duration" : 3757
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51ba421209f0e6ef",
+  "name" : "Should throw error message when entered pin in Pin field does not matches to the seted pin",
+  "time" : {
+    "start" : 1606207053417,
+    "stop" : 1606207056997,
+    "duration" : 3580
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f024ebc644541cf",
+  "name" : "Student should get Login and Set Pin/Login With Pin Page should get displayed",
+  "time" : {
+    "start" : 1606200402139,
+    "stop" : 1606200404078,
+    "duration" : 1939
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff0bf54ee7be47d7",
+  "name" : "Should throw error message when entered pin in Pin and Confirm Pin does not matches",
+  "time" : {
+    "start" : 1606206250023,
+    "stop" : 1606206252767,
+    "duration" : 2744
   },
   "status" : "passed",
   "severity" : "normal"

@@ -28,6 +28,10 @@ class LoginPage extends Page{
                                                                  // also pause command is not working here
     }
 
+    get passwordInputTypeText(){
+        return $("//input[@type='text']");
+    }
+
     get forgotPassword(){
         return $('*=Password?');
     }
@@ -49,7 +53,7 @@ class LoginPage extends Page{
     }
 
     get loginText(){
-        return $('h3*=login');
+        return $('h3=Login');
     }
 
 }

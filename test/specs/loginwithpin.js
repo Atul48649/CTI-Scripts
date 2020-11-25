@@ -22,6 +22,13 @@ describe('Login With Pin Page', () => {
         expect(LoginWithPinPage.loginWithPinText).toBeDisplayed();
     });
 
+    // Pin should gets visible
+    it('Pin should gets visible', () => {
+        LoginWithPinPage.pinInput.addValue('1234');
+        LoginWithPinPage.pinEyeIcon.click();
+        expect(LoginWithPinPage.pinInput.getValue()).isDisplayed();
+    });
+
     // By default VERIFY PIN button should be disabled
     it('Verify Pin button should be disabled', () => {
         LoginWithPinPage.verifyPinBtn.waitForClickable({ reverse: true });

@@ -1,0 +1,56 @@
+{
+  "uid" : "fc7a19d5fc1ac8f8",
+  "name" : "Logo should be displayed",
+  "fullName" : "Set Pin page.Logo should be displayed",
+  "historyId" : "209b8ded5a2ae1c8ae2b18b3d0fc49ec",
+  "time" : {
+    "start" : 1606218603631,
+    "stop" : 1606218603662,
+    "duration" : 31
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logo should be displayed"
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fc7a19d5fc1ac8f8.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

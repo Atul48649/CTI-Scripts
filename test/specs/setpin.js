@@ -3,16 +3,16 @@ const LoginPage = require('../pages/login.page');
 
 describe('Set Pin page', () => {
     // Unable to test any test case here
-    /*  
+   /*  
     // TODO : Defining path to the Set Pin screen
-    before(() => {
+    beforeEach(() => {
         LoginPage.open();
-        // LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
-        // LoginPage.passwordInput.addValue('12345');
-        // LoginPage.loginBtn.click();
+        LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
+        LoginPage.passwordInput.addValue('12345');
+        LoginPage.loginBtn.click();
         // browser.pause(2000);
     });
-     
+
     afterEach(() => {
         LoginPage.open();
         LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
@@ -24,13 +24,11 @@ describe('Set Pin page', () => {
     // Should verify the title
     it('Should verify the title', () => {
         expect(browser).toHaveTitle('CTI');
-        console.log("Should verify the title");
     });
 
     // Logo of CTI should be present and visible
     it('Logo should be displayed', () => {
         expect(SetPinPage.ctiLogo).toBeVisible()
-        console.log("Should verify the title");
     });
 
     // Should display Set Pin text on the Set Pin Screen

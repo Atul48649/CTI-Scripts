@@ -1,13 +1,12 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "name" : "categories",
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
       "name" : "Expect  to have text\n                \n                Expected: \"You have entered incorrect password.\"\n                Received: undefined",
       "children" : [ {
         "name" : "Should throw error message for Password field",
-        "uid" : "65d042b48666c8f4",
+        "uid" : "38b15a5bb1543bff",
         "parentUid" : "e528bfabd0c7c48ca8adb2b4d676aae3",
         "status" : "failed",
         "time" : {
@@ -20,6 +19,40 @@
         "parameters" : [ "chrome-86.0.4240.198" ]
       } ],
       "uid" : "e528bfabd0c7c48ca8adb2b4d676aae3"
+    }, {
+      "name" : "Expect window to have title\n                \n                Expected: \"CTII\"\n                Received: \"CTI\"",
+      "children" : [ {
+        "name" : "open the url and login",
+        "uid" : "85a2cbddfb01f24f",
+        "parentUid" : "769c4a734a0d0ac0472c3319976a3252",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606218927964,
+          "stop" : 1606218939340,
+          "duration" : 11376
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      } ],
+      "uid" : "769c4a734a0d0ac0472c3319976a3252"
+    }, {
+      "name" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/\"",
+      "children" : [ {
+        "name" : "Should verify the title",
+        "uid" : "b47035e029edbbf3",
+        "parentUid" : "abdc8ca9da6d27f0fe2578325aee9653",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606288149076,
+          "stop" : 1606288160313,
+          "duration" : 11237
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      } ],
+      "uid" : "abdc8ca9da6d27f0fe2578325aee9653"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   }, {
@@ -28,7 +61,7 @@
       "name" : "unknown error: net::ERR_INTERNET_DISCONNECTED\n                  (Session info: chrome=86.0.4240.198)",
       "children" : [ {
         "name" : "\"before each\" hook for \"Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button\"",
-        "uid" : "6ffed786b14be6fd",
+        "uid" : "7f5d70cdd3ab5a4c",
         "parentUid" : "48219c65ff7e22274f90f71026ec73b5",
         "status" : "broken",
         "time" : {
@@ -41,7 +74,77 @@
         "parameters" : [ "chrome-86.0.4240.198" ]
       } ],
       "uid" : "48219c65ff7e22274f90f71026ec73b5"
+    }, {
+      "name" : "Can't call addValue on element with selector \"#email\" because element wasn't found",
+      "children" : [ {
+        "name" : "\"before each\" hook for \"Should display Set Pin text on the screen\"",
+        "uid" : "661a2c2f08ed2032",
+        "parentUid" : "db471814e1d860749174c37aa12767bd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606220498127,
+          "stop" : 1606220509790,
+          "duration" : 11663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      }, {
+        "name" : "\"before each\" hook for \"Logo should be displayed\"",
+        "uid" : "1727145c79c5ca8d",
+        "parentUid" : "db471814e1d860749174c37aa12767bd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606220555356,
+          "stop" : 1606220565591,
+          "duration" : 10235
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      }, {
+        "name" : "\"after each\" hook for \"Should display Set Pin text on the screen\"",
+        "uid" : "62d17ed325ef86ff",
+        "parentUid" : "db471814e1d860749174c37aa12767bd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606220687374,
+          "stop" : 1606220698188,
+          "duration" : 10814
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      }, {
+        "name" : "Should display Set Pin text on the screen",
+        "uid" : "d4ddd3cb842c05d8",
+        "parentUid" : "db471814e1d860749174c37aa12767bd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606288164260,
+          "stop" : 1606288194854,
+          "duration" : 30594
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      }, {
+        "name" : "Enter Pin button should be disabled",
+        "uid" : "174d33084c749b18",
+        "parentUid" : "db471814e1d860749174c37aa12767bd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606288194854,
+          "stop" : 1606288205193,
+          "duration" : 10339
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-86.0.4240.198" ]
+      } ],
+      "uid" : "db471814e1d860749174c37aa12767bd"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  } ],
+  "name" : "categories"
 }
