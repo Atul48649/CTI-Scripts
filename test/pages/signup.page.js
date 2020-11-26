@@ -37,7 +37,7 @@ class SignupPage extends Page{
     get welcomeText(){
         return $('h5*=Welcome');
     }
-    
+
 }
 
 module.exports = new SignupPage();

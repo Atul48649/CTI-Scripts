@@ -36,13 +36,13 @@ describe('Login page', () => {
 
     // FIXME
     // Entered Password should get visible
-    it('Entered Password should get visible', () => {
-        browser.pause(2000);
-        LoginPage.passwordInput.addValue('123654789');
-        LoginPage.eyeIcon.click();
-        expect(LoginPage.passwordInput).toBeDisplayed();
-        browser.pause(4000);
-    });
+    // it('Entered Password should get visible', () => {
+    //     browser.pause(2000);
+    //     LoginPage.passwordInput.addValue('123654789');
+    //     LoginPage.eyeIcon.click();
+    //     expect(LoginPage.passwordInput).toBeDisplayed();
+    //     browser.pause(4000);
+    // });
 
     // Verifying Title of the Page
     // it('Should verify the title of the page', () => {
@@ -99,7 +99,7 @@ describe('Login page', () => {
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin');
     // });
 
-    //  Login>Set Pin(When Pin is not created)
+    //  Entering same Pin in Pin and Confirm Pin field Login>Set Pin(When Pin is not created)
     // it('Login and setting Pin', () => {
     //     LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
     //     LoginPage.passwordInput.addValue('12345');
@@ -222,6 +222,7 @@ describe('Login page', () => {
     //     expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/');
     // });
 
+    //==============================THIS ONE NOT ADDED IN THE LOGIN COPY======================================
     // When try to login again we should get credentials prefilled becuse we marked Remember Me as checked
     // it('Student should get Sign Out', () => {
     //     LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
