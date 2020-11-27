@@ -62,19 +62,19 @@ module.exports = new LoginPage();
 
 //
 
-const LoginPage = {
-    message: "",
-    it_loginFieldGetCleared: ()=>{
-        it('Entered Email Id/ Phone Number in the input field should get cleared', () => {
-            LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
-            browser.pause(2000);// Using this so that i can see the exection a bit slower, This can be removed
-            LoginPage.crossIcon.click();
-            browser.pause(2000);// Using this so that i can see the exection a bit slower, This can be removed
-        });
-    },
+// const LoginPage = {
+//     message: "",
+//     it_loginFieldGetCleared: ()=>{
+//         it('Entered Email Id/ Phone Number in the input field should get cleared', () => {
+//             LoginPage.emailOrPhoneInput.addValue('shuker07@bigpond.com');
+//             browser.pause(2000);// Using this so that i can see the exection a bit slower, This can be removed
+//             LoginPage.crossIcon.click();
+//             browser.pause(2000);// Using this so that i can see the exection a bit slower, This can be removed
+//         });
+//     },
 
-}
+// }
 
-import LoginPage from '../'
+// import LoginPage from '../'
 
-LoginPage.it_loginFieldGetCleared();
+// LoginPage.it_loginFieldGetCleared();

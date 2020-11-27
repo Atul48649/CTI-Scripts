@@ -224,7 +224,7 @@ const LoginCopyPage = {
 
 }
 
-module.exports = new LoginCopyPage();
+module.exports = LoginCopyPage;
 
 
 // export const itUsernameFieldGetCleared = () => {

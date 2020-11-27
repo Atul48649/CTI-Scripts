@@ -1,11 +1,11 @@
 // TODO : TO BE ADDED
-export const selectorsConfig = {
+exports.selectorsConfig = {
     eyeIcon: "",
     eyeSlashIcon: "",
     ctiLogo: "\"//img[@alt='CTI logo']\""
 }
 
-export const loginScreen = {
+exports.loginScreen = {
     username : "jacobrams2001@gmail.com",
     password : "12345",
     wrongUsername : "jacobrams",
@@ -18,7 +18,7 @@ export const loginScreen = {
     resettingPasswordUrl : "",
 }
 
-export const setPinScreen = {
+exports.setPinScreen = {
     pin : "1234",
     confirmPin : "1234",
     mismatchedConfirmPin : "4321",
@@ -26,13 +26,13 @@ export const setPinScreen = {
     setPinUrl : "http://cti-techoon.azurewebsites.net/set/pin",
 }
 
-export const loginWithPinScreen = {
+exports.loginWithPinScreen = {
     pin : "1234",
     wrongPin : "4321",
     errorTextPin : "Wrong Pin.",
     loginWithPinUrl : "http://cti-techoon.azurewebsites.net/sign/pin",
 }
 
-export const studentDashboardScreen = {
+exports.studentDashboardScreen = {
     studentDashboardUrl : "http://cti-techoon.azurewebsites.net/student/dashboard",
 }
