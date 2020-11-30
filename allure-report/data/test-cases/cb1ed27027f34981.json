@@ -1,0 +1,56 @@
+{
+  "uid" : "cb1ed27027f34981",
+  "name" : "Should display Set Pin text on the screen",
+  "fullName" : "Login page.Should display Set Pin text on the screen",
+  "historyId" : "3f06157b185288979f3d82cbb9bfba6d",
+  "time" : {
+    "start" : 1606289254021,
+    "stop" : 1606289256623,
+    "duration" : 2602
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should display Set Pin text on the screen"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cb1ed27027f34981.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

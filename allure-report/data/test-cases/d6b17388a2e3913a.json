@@ -1,0 +1,74 @@
+{
+  "uid" : "d6b17388a2e3913a",
+  "name" : "Should verify the title",
+  "fullName" : "Sign Up page.Should verify the title",
+  "historyId" : "222688e243533bd3cdfbf29c59349d56",
+  "time" : {
+    "start" : 1605874780777,
+    "stop" : 1605874781785,
+    "duration" : 1008
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should verify the title"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63fdc86295d696a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605874529552,
+        "stop" : 1605874538755,
+        "duration" : 9203
+      }
+    }, {
+      "uid" : "aaeddd399e9d3c8a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605855158831,
+        "stop" : 1605855159858,
+        "duration" : 1027
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d6b17388a2e3913a.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

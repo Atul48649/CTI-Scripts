@@ -1,0 +1,66 @@
+{
+  "uid" : "31aee60919df02e3",
+  "name" : "Enter Pin button should be disabled",
+  "fullName" : "Set Pin page.Enter Pin button should be disabled",
+  "historyId" : "8716bf6a925604fefaadd00ebe11c54f",
+  "time" : {
+    "start" : 1606290452944,
+    "stop" : 1606290452990,
+    "duration" : 46
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Enter Pin button should be disabled"
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "faf4d38d94f8b633",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606290333474,
+        "stop" : 1606290333503,
+        "duration" : 29
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "31aee60919df02e3.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

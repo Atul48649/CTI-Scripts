@@ -1,0 +1,114 @@
+{
+  "uid" : "f617d61ad5ae0ed2",
+  "name" : "Should display Sign Up text on the screen",
+  "fullName" : "Sign Up page.Should display Sign Up text on the screen",
+  "historyId" : "28cba4f3f70139077a8b4ac8fb50e4b",
+  "time" : {
+    "start" : 1606295408542,
+    "stop" : 1606295419527,
+    "duration" : 10985
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect $(`h3*=Sign`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+  "statusTrace" : "Error: Expect $(`h3*=Sign`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\signup.js:28:39)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should display Sign Up text on the screen"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bef0bd22ea7b08e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606224490879,
+        "stop" : 1606224492447,
+        "duration" : 1568
+      }
+    }, {
+      "uid" : "4e9a4e699196cc1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606220198148,
+        "stop" : 1606220199582,
+        "duration" : 1434
+      }
+    }, {
+      "uid" : "1045084a9128c3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606220141563,
+        "stop" : 1606220143284,
+        "duration" : 1721
+      }
+    }, {
+      "uid" : "5b5d3ce1cae75928",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605874781785,
+        "stop" : 1605874782459,
+        "duration" : 674
+      }
+    }, {
+      "uid" : "5c329e67315c29bb",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3*=Sign`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1605874538756,
+        "stop" : 1605874549054,
+        "duration" : 10298
+      }
+    }, {
+      "uid" : "c51d284f8db96062",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3*=Sign`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1605855159858,
+        "stop" : 1605855170053,
+        "duration" : 10195
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f617d61ad5ae0ed2.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

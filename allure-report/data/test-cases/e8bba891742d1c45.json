@@ -1,0 +1,58 @@
+{
+  "uid" : "e8bba891742d1c45",
+  "name" : "Enter Pin button should be disabled",
+  "fullName" : "Login Page.Enter Pin button should be disabled",
+  "historyId" : "998288d2e9e0b42d85252edd0e7e05ad",
+  "time" : {
+    "start" : 1606732313108,
+    "stop" : 1606732323818,
+    "duration" : 10710
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/\"",
+  "statusTrace" : "Error: Expect window to have url\n                \n                Expected: \"http://cti-techoon.azurewebsites.net/set/pin\"\n                Received: \"http://cti-techoon.azurewebsites.net/\"\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\pages\\logincopy.page.js:40:29)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Enter Pin button should be disabled"
+  }, {
+    "name" : "package",
+    "value" : "Login Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e8bba891742d1c45.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

@@ -1,0 +1,76 @@
+{
+  "uid" : "2ab376326d43c252",
+  "name" : "Password should get generated and Set Pin page should get displayed",
+  "fullName" : "Sign Up page.Password should get generated and Set Pin page should get displayed",
+  "historyId" : "4ad7c247019bfb454ba8048ee714311c",
+  "time" : {
+    "start" : 1605874783132,
+    "stop" : 1605874785017,
+    "duration" : 1885
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Password should get generated and Set Pin page should get displayed"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2ef28d6026ebff23",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#password\" because element wasn't found",
+      "time" : {
+        "start" : 1605874559201,
+        "stop" : 1605874569377,
+        "duration" : 10176
+      }
+    }, {
+      "uid" : "a50d2f8ad7e6967",
+      "status" : "broken",
+      "statusDetails" : "Can't call addValue on element with selector \"#password\" because element wasn't found",
+      "time" : {
+        "start" : 1605855180211,
+        "stop" : 1605855190495,
+        "duration" : 10284
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ab376326d43c252.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

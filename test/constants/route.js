@@ -1,4 +1,9 @@
-export const LOGIN = "/login"
-export const SETPIN = "/set/pin";
-export const LOGINWITHPIN = "/sign/pin";
-export const STUDENTDASHBOARD = "/student/dashboard";
+exports.test1 = {
+    LOGIN : "/login",
+    SETPIN : "/set/pin",
+    LOGINWITHPIN : "/sign/pin",
+    STUDENTDASHBOARD : "/student/dashboard"
+}
+
+
+

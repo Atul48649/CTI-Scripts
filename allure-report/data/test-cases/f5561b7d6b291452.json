@@ -1,0 +1,202 @@
+{
+  "uid" : "f5561b7d6b291452",
+  "name" : "Login text should be visible",
+  "fullName" : "Login page.Login text should be visible",
+  "historyId" : "69607414e06bb817a4056b418a7a31b3",
+  "time" : {
+    "start" : 1606287750868,
+    "stop" : 1606287751051,
+    "duration" : 183
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login text should be visible"
+  }, {
+    "name" : "package",
+    "value" : "Login page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "17ec9eb3663197b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287727907,
+        "stop" : 1606287728205,
+        "duration" : 298
+      }
+    }, {
+      "uid" : "93674847d832479d",
+      "status" : "failed",
+      "statusDetails" : "Expect  to be displayed\n                \n                Expected: \"displayed\"\n                Received: \"not displayed\"",
+      "time" : {
+        "start" : 1606287667067,
+        "stop" : 1606287677378,
+        "duration" : 10311
+      }
+    }, {
+      "uid" : "d0e19e1182ee980c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287616348,
+        "stop" : 1606287616566,
+        "duration" : 218
+      }
+    }, {
+      "uid" : "354da4847d2bba74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287184614,
+        "stop" : 1606287184827,
+        "duration" : 213
+      }
+    }, {
+      "uid" : "88a18a1fb57fd75f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287130466,
+        "stop" : 1606287130741,
+        "duration" : 275
+      }
+    }, {
+      "uid" : "78b23d7e72b5a1c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287073571,
+        "stop" : 1606287073797,
+        "duration" : 226
+      }
+    }, {
+      "uid" : "82b2ea8f696da468",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606287039340,
+        "stop" : 1606287039583,
+        "duration" : 243
+      }
+    }, {
+      "uid" : "4b2cba36bc073fb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606286807800,
+        "stop" : 1606286831199,
+        "duration" : 23399
+      }
+    }, {
+      "uid" : "76ad3657a4f25e93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606286720706,
+        "stop" : 1606286721843,
+        "duration" : 1137
+      }
+    }, {
+      "uid" : "a2d153b8a73deb8d",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3=login`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1606286285839,
+        "stop" : 1606286297049,
+        "duration" : 11210
+      }
+    }, {
+      "uid" : "4586918446d964fa",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3=login`) to be displayed\n                \n                Expected: \"displayed\"\n                Received: \"not displayed\"",
+      "time" : {
+        "start" : 1606286215349,
+        "stop" : 1606286226492,
+        "duration" : 11143
+      }
+    }, {
+      "uid" : "e3f48c5cbe5464f2",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3*=login`) to be displayed\n                \n                Expected: \"displayed\"\n                Received: \"not displayed\"",
+      "time" : {
+        "start" : 1606286152969,
+        "stop" : 1606286164133,
+        "duration" : 11164
+      }
+    }, {
+      "uid" : "a36c0dbf117f02a1",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3*=login`) to be displayed\n                \n                Expected: \"displayed\"\n                Received: \"not displayed\"",
+      "time" : {
+        "start" : 1606224826554,
+        "stop" : 1606224837562,
+        "duration" : 11008
+      }
+    }, {
+      "uid" : "f312a14a201abbd4",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3*=login`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1606224728455,
+        "stop" : 1606224739711,
+        "duration" : 11256
+      }
+    }, {
+      "uid" : "33a58fa41fd3c30c",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3=login`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1606224362126,
+        "stop" : 1606224373316,
+        "duration" : 11190
+      }
+    }, {
+      "uid" : "b85c0923b33eacf7",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`h3=login`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "time" : {
+        "start" : 1606224237256,
+        "stop" : 1606224248413,
+        "duration" : 11157
+      }
+    }, {
+      "uid" : "742031080a98501a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606224173157,
+        "stop" : 1606224174814,
+        "duration" : 1657
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5561b7d6b291452.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

@@ -1,0 +1,107 @@
+{
+  "uid" : "579ac335dde6323f",
+  "name" : "Signup button should be disabled",
+  "fullName" : "Sign Up page.Signup button should be disabled",
+  "historyId" : "2dc8dbd1fd6be7cd87881cf9816a5f3c",
+  "time" : {
+    "start" : 1606220172282,
+    "stop" : 1606220173209,
+    "duration" : 927
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Signup button should be disabled"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "db71d8847a3f929d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606220143285,
+        "stop" : 1606220143494,
+        "duration" : 209
+      }
+    }, {
+      "uid" : "b1869e8835b4ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606216588742,
+        "stop" : 1606216589745,
+        "duration" : 1003
+      }
+    }, {
+      "uid" : "1dacedb620be0d7e",
+      "status" : "broken",
+      "statusDetails" : "element (\".login-btn\") still not clickable after 3000ms",
+      "time" : {
+        "start" : 1606216544318,
+        "stop" : 1606216549763,
+        "duration" : 5445
+      }
+    }, {
+      "uid" : "208f112a7f32759e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606216481111,
+        "stop" : 1606216482180,
+        "duration" : 1069
+      }
+    }, {
+      "uid" : "9ac3c6674ff64830",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606214365501,
+        "stop" : 1606214372400,
+        "duration" : 6899
+      }
+    }, {
+      "uid" : "d43da6c37facae91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606212339000,
+        "stop" : 1606212339206,
+        "duration" : 206
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "579ac335dde6323f.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

@@ -1,37 +1,48 @@
 {
-  "total" : 3,
+  "total" : 4,
   "items" : [ {
-    "uid" : "c2d57503ceff46fd1c9bad0fe50e2008",
-    "name" : "Login page",
-    "statistic" : {
-      "failed" : 2,
-      "broken" : 3,
-      "skipped" : 0,
-      "passed" : 16,
-      "unknown" : 0,
-      "total" : 21
-    }
-  }, {
     "uid" : "5647a858d6b9619194c05b830f6390b7",
     "name" : "Set Pin page",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 4,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     }
   }, {
     "uid" : "c7ff4eb43f25d50fab3bb1cd182bc191",
     "name" : "Sign Up page",
     "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "c2d57503ceff46fd1c9bad0fe50e2008",
+    "name" : "Login page",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 17,
+      "unknown" : 0,
+      "total" : 21
+    }
+  }, {
+    "uid" : "52dafac86ee12ce5786fb19f136bb510",
+    "name" : "Login Page",
+    "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 8
+      "total" : 6
     }
   } ]
 }

@@ -1,0 +1,83 @@
+{
+  "uid" : "939918cd2ecf3fca",
+  "name" : "Entered Password should get visible",
+  "fullName" : "Login Page.Entered Password should get visible",
+  "historyId" : "2f314e8d36108f0d464788f802d36b60",
+  "time" : {
+    "start" : 1606716451177,
+    "stop" : 1606716455563,
+    "duration" : 4386
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Entered Password should get visible"
+  }, {
+    "name" : "package",
+    "value" : "Login Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fe6234a13ab25cec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606714885793,
+        "stop" : 1606714890153,
+        "duration" : 4360
+      }
+    }, {
+      "uid" : "df79742ba7dd58db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606714745741,
+        "stop" : 1606714750935,
+        "duration" : 5194
+      }
+    }, {
+      "uid" : "33b7fbfe1287c8a8",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`#password`) to have attribute type\n                \n                Expected: \"text\"\n                Received: \"password\"",
+      "time" : {
+        "start" : 1606714684969,
+        "stop" : 1606714697976,
+        "duration" : 13007
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "939918cd2ecf3fca.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

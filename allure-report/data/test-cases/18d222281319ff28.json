@@ -1,0 +1,66 @@
+{
+  "uid" : "18d222281319ff28",
+  "name" : "Logo should be displayed",
+  "fullName" : "Login Page.Logo should be displayed",
+  "historyId" : "59f048be790da2fc2573556077e83378",
+  "time" : {
+    "start" : 1606732438134,
+    "stop" : 1606732438383,
+    "duration" : 249
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logo should be displayed"
+  }, {
+    "name" : "package",
+    "value" : "Login Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "38f5fdb96d8d211a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606732312853,
+        "stop" : 1606732313108,
+        "duration" : 255
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "18d222281319ff28.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

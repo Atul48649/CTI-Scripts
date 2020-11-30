@@ -1,0 +1,56 @@
+{
+  "uid" : "f825bb6dd47d2eea",
+  "name" : "Password and Confirm Password should get visible",
+  "fullName" : "Sign Up page.Password and Confirm Password should get visible",
+  "historyId" : "4cfe4e44ea67b8aa68d447d4c4ac68f5",
+  "time" : {
+    "start" : 1606215770251,
+    "stop" : 1606215776098,
+    "duration" : 5847
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testClass",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Password and Confirm Password should get visible"
+  }, {
+    "name" : "package",
+    "value" : "Sign Up page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f825bb6dd47d2eea.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

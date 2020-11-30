@@ -7,5 +7,6 @@ const {
 } = require('./general');
 
 exports.studentDashboardScreen = {
+    title : "CTI",
     studentDashboardUrl : `${BASE_URL}${STUDENTDASHBOARD}`,
 }

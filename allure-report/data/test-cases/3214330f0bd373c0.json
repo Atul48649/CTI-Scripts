@@ -1,0 +1,161 @@
+{
+  "uid" : "3214330f0bd373c0",
+  "name" : "Logo should be displayed",
+  "fullName" : "Set Pin page.Logo should be displayed",
+  "historyId" : "209b8ded5a2ae1c8ae2b18b3d0fc49ec",
+  "time" : {
+    "start" : 1606290412819,
+    "stop" : 1606290422856,
+    "duration" : 10037
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expect $(`//img[@alt='CTI logo']`) to be visible\n                \n                Expected: \"visible\"\n                Received: \"not visible\"",
+  "statusTrace" : "Error: Expect $(`//img[@alt='CTI logo']`) to be visible\n                \n                Expected: \"visible\"\n                Received: \"not visible\"\n                    at Context.<anonymous> (C:\\Users\\Atul Kumar\\Desktop\\CTI\\test\\specs\\setpin.js:31:36)\n                    at Context.executeSync (C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:25:22)\n                    at C:\\Users\\Atul Kumar\\Desktop\\CTI\\node_modules\\@wdio\\sync\\build\\index.js:46:68",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testClass",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logo should be displayed"
+  }, {
+    "name" : "package",
+    "value" : "Set Pin page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f38ffa95e909726a",
+      "status" : "failed",
+      "statusDetails" : "Expect $(`//img[@alt='CTI logo']`) to be visible\n                \n                Expected: \"visible\"\n                Received: \"not visible\"",
+      "time" : {
+        "start" : 1606290293316,
+        "stop" : 1606290303366,
+        "duration" : 10050
+      }
+    }, {
+      "uid" : "32529eb6d28f6ab4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606289707118,
+        "stop" : 1606289707647,
+        "duration" : 529
+      }
+    }, {
+      "uid" : "5178d9fd9f429e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606220686658,
+        "stop" : 1606220687373,
+        "duration" : 715
+      }
+    }, {
+      "uid" : "a5e4e8a3a0018e05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606220497652,
+        "stop" : 1606220498127,
+        "duration" : 475
+      }
+    }, {
+      "uid" : "56fd3ddb795bb02e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606219915055,
+        "stop" : 1606219915533,
+        "duration" : 478
+      }
+    }, {
+      "uid" : "5223c374388c9b0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606219858924,
+        "stop" : 1606219859438,
+        "duration" : 514
+      }
+    }, {
+      "uid" : "ebc18b06f7144ed1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606219733476,
+        "stop" : 1606219733504,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "3d8e9a79820ae6ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218939351,
+        "stop" : 1606218939377,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "ac08fee92b0d7226",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218780455,
+        "stop" : 1606218780484,
+        "duration" : 29
+      }
+    }, {
+      "uid" : "4fcf3fc5bf483d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218603631,
+        "stop" : 1606218603662,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "15703081c8c7497f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218359984,
+        "stop" : 1606218360012,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "ea90b69ae6642c4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606218220173,
+        "stop" : 1606218220197,
+        "duration" : 24
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3214330f0bd373c0.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

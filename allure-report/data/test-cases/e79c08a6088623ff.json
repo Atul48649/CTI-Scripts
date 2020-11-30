@@ -1,0 +1,56 @@
+{
+  "uid" : "e79c08a6088623ff",
+  "name" : "Should verify the title of the page",
+  "fullName" : "Login Page.Should verify the title of the page",
+  "historyId" : "4b539e8428c8924732e178df26d7eee2",
+  "time" : {
+    "start" : 1606396347186,
+    "stop" : 1606396352579,
+    "duration" : 5393
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Should verify the title of the page"
+  }, {
+    "name" : "package",
+    "value" : "Login Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e79c08a6088623ff.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

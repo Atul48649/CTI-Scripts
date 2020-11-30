@@ -1,0 +1,66 @@
+{
+  "uid" : "5c8cc65c3a1a1bc4",
+  "name" : "Entered Email Id/ Phone Number in the input field should get cleared",
+  "fullName" : "Login Page.Entered Email Id/ Phone Number in the input field should get cleared",
+  "historyId" : "49440f77cef6fe2875f0823a390205a7",
+  "time" : {
+    "start" : 1606716441204,
+    "stop" : 1606716451176,
+    "duration" : 9972
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Entered Email Id/ Phone Number in the input field should get cleared"
+  }, {
+    "name" : "package",
+    "value" : "Login Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1623acdd203e7797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606714880579,
+        "stop" : 1606714885792,
+        "duration" : 5213
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5c8cc65c3a1a1bc4.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}

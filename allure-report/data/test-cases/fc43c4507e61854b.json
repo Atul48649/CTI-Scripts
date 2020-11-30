@@ -1,0 +1,66 @@
+{
+  "uid" : "fc43c4507e61854b",
+  "name" : "CTI Logo should be displayed in Login page",
+  "fullName" : "Login Page.CTI Logo should be displayed in Login page",
+  "historyId" : "91dd561146da4ad6a8d877956c118475",
+  "time" : {
+    "start" : 1606732437829,
+    "stop" : 1606732438133,
+    "duration" : 304
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Login Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "CTI Logo should be displayed in Login page"
+  }, {
+    "name" : "package",
+    "value" : "Login Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2974e42d1fe18b98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606732312643,
+        "stop" : 1606732312853,
+        "duration" : 210
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fc43c4507e61854b.json",
+  "parameterValues" : [ "chrome-86.0.4240.198" ]
+}
