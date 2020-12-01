@@ -7,40 +7,42 @@ const openPage= (page) => {
     beforeEach(() => {
         page.open();
     });
+    afterEach(() => {
+        browser.reloadSession();
+    });
 }
 
 // Checking fixed components/fields/elements of the Login Page
-// const suite1 = ()=>{
-//     openPage(LoginPage);
-//     LoginCopyPage.itVerifyTitle();
-    // LoginCopyPage.itCtiLogoShouldBeDisplayedInLoginPage();
-    // LoginCopyPage.itDisplayLoginTextInLoginPage();
-    // LoginCopyPage.itLoginbtnDisabled();
-// }
-// describe('Login Page', suite1);
-
-//Checking fixed components/fields/elements of the Set Pin Page
-const suite2 = ()=> {
+const suite1 = ()=>{
     openPage(LoginPage);
-    LoginCopyPage.itVerifyTitleInSetPinPage();
-    // LoginCopyPage.itCtiLogoShouldBeDisplayedInSetPinPage();
-    // LoginCopyPage.itDisplaySetPinTextInSetPinPage();
-    // LoginCopyPage.itDisplay2StepVerificationTextInSetPinPage();
-    // LoginCopyPage.itDisplay2StepVerificationParagraphTextInSetPinPage();
-    //LoginCopyPage.itEnterPinbtnDisabled();
+    LoginCopyPage.itVerifyTitle();
+    LoginCopyPage.itCtiLogoShouldBeDisplayedInLoginPage();
+    LoginCopyPage.itDisplayLoginTextInLoginPage();
+    LoginCopyPage.itLoginbtnDisabled();
 }
-describe('Set Pin Page', suite2);
+describe('Fixed things(texts,logo,title etc) present in the Login Page', suite1);
 
-/*
+// Checking fixed components/fields/elements of the Set Pin Page
+// const suite2 = ()=> {
+//     openPage(LoginPage);
+//     LoginCopyPage.itVerifyTitleInSetPinPage();
+//     LoginCopyPage.itCtiLogoShouldBeDisplayedInSetPinPage(); 
+//     LoginCopyPage.itDisplaySetPinTextInSetPinPage();
+//     LoginCopyPage.itDisplay2StepVerificationTextInSetPinPage();
+//     LoginCopyPage.itDisplay2StepVerificationParagraphTextInSetPinPage();
+//     LoginCopyPage.itEnterPinbtnDisabled();
+// }
+// describe('Fixed things(texts,logo,title etc) present in the Set Pin Page', suite2);
+
 // Checking fixed components/fields/elements of the Login With Pin Page
-const suite3 = ()=> {
-    itVerifyTitleInLoginWithPinPage();
-    itCtiLogoShouldBeDisplayedInLoginWithPinPage();
-    itDisplaySetPinTextInLoginWithPinPage();
-    itVerifybtnDisabled();
-}
-describe('Login With Pin Page', suite3);
-*/
+// const suite3 = ()=> {
+//     openPage(LoginPage);
+//     LoginCopyPage.itVerifyTitleInLoginWithPinPage();
+//     LoginCopyPage.itCtiLogoShouldBeDisplayedInLoginWithPinPage();
+//     LoginCopyPage.itDisplayLoginWithPinTextInLoginWithPinPage();
+//     LoginCopyPage.itVerifybtnDisabled();
+// }
+// describe('Fixed things(texts,logo,title etc) present in the Login With Pin Page', suite3);
 
 
 // const suite4 = ()=> {
@@ -53,7 +55,7 @@ describe('Login With Pin Page', suite3);
 //     LoginCopyPage.itEnterValidLoginCredentialsWhenPinCreatedEarlier();
 //     LoginCopyPage.itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier();
 // }
-//describe('Login Page', suite4);
+// describe('Login Page', suite4);
 
 // const suite5 = ()=> {
 //     openPage(LoginPage);

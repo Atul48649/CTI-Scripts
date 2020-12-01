@@ -39,10 +39,10 @@ const LoginCopyPage = {
     },
     itLoginbtnDisabled : function(){
         it('Enter Pin button should be disabled', () => {
-            LoginPage.emailOrPhoneInput.addValue('harryerbacher@gmail.com');
-            LoginPage.passwordInput.addValue('12345');
+            LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
+            LoginPage.passwordInput.addValue(loginScreen.password);
             LoginPage.loginBtn.click();
-            expect(browser).toHaveUrl('http://cti-techoon.azurewebsites.net/set/pin'); 
+            expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             SetPinPage.enterPinBtn.waitForClickable({ reverse: true });
         });
     },
@@ -66,7 +66,7 @@ const LoginCopyPage = {
     },
     itEnterInvalidUsernameValidPassword : function(){
         it('Should throw error message for Email Id/Phone Number field', () => {
-            LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
+            LoginPage.emailOrPhoneInput.addValue(loginScreen.wrongUsername);
             LoginPage.passwordInput.addValue(loginScreen.password);
             LoginPage.loginBtn.click();
             browser.pause(2000);
@@ -77,7 +77,7 @@ const LoginCopyPage = {
     itEnterValidUsernameInvalidPassword : function(){
         it('Should throw error message for Password field', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            LoginPage.passwordInput.addValue(loginScreen.password);
+            LoginPage.passwordInput.addValue(loginScreen.wrongPassword);
             LoginPage.loginBtn.click();
             browser.pause(2000);
             expect(LoginPage.errorMsgPassword).toHaveText(loginScreen.errorTextPassword);
@@ -86,8 +86,8 @@ const LoginCopyPage = {
     },
     itInvalidUsernameInvalidPassword : function(){
         it('Should throw error message for both Email Id/Phone Number and Password field', () => {
-            LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            LoginPage.passwordInput.addValue(loginScreen.password);
+            LoginPage.emailOrPhoneInput.addValue(loginScreen.wrongUsername);
+            LoginPage.passwordInput.addValue(loginScreen.wrongPassword);
             LoginPage.loginBtn.click();
             expect(LoginPage.errorMsgEmailIdOrPhoneNumber).toHaveText(loginScreen.errorTextUsername);
             expect(LoginPage.errorMsgPassword).toHaveText(loginScreen.errorTextPassword);
@@ -96,7 +96,7 @@ const LoginCopyPage = {
     },
     itEnterValidLoginCredentialsWhenPinCreatedEarlier : function(){
         it('Student should get Login and Login With Pin Page should get displayed', () => {
-            LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
+            LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinCreatedEarlier);
             LoginPage.passwordInput.addValue(loginScreen.password);
             LoginPage.loginBtn.click();
             expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl);
@@ -104,7 +104,7 @@ const LoginCopyPage = {
     },
     itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier : function(){
         it('Student should get Login and Set Pin Page should get displayed', () => {
-            LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
+            LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
             LoginPage.passwordInput.addValue(loginScreen.password);
             LoginPage.loginBtn.click();
             expect(browser).toHaveUrl(setPinScreen.setPinUrl);
@@ -262,6 +262,7 @@ const LoginCopyPage = {
     },
     itDisplaySetPinTextInSetPinPage : function(){
         it('Should display Set Pin text on the screen', () => {
+            browser.pause(2000);
             LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
             LoginPage.passwordInput.addValue(loginScreen.password);
             LoginPage.loginBtn.click();
@@ -333,7 +334,7 @@ const LoginCopyPage = {
             expect(LoginWithPinPage.ctiLogo).toBeVisible();
         });
     },
-    itDisplayLoginWihPinTextInLoginWithPinPage : function(){
+    itDisplayLoginWithPinTextInLoginWithPinPage : function(){
         it('Should display Set Pin text on the screen', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
             LoginPage.passwordInput.addValue(loginScreen.password);

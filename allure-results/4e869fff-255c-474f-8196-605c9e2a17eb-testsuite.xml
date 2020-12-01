@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606817598466' stop='1606817611078'>
+    <name>Fixed things(texts,logo,title etc) present in the Set Pin Page</name>
+    <title>Fixed things(texts,logo,title etc) present in the Set Pin Page</title>
+    <test-cases>
+        <test-case start='1606817598466' status='passed' stop='1606817600868'>
+            <name>Should verify the title</name>
+            <title>Should verify the title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606817600869' status='broken' stop='1606817611078'>
+            <name>Should display Set Pin text on the screen</name>
+            <title>Should display Set Pin text on the screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call addValue on element with selector "#email" because element wasn't found</message>
+                <stack-trace>Error: Can't call addValue on element with selector "#email" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\utils\implicitWait.js:26:19)
+                    at Element.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Element.wrapCommandFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at Element.elementErrorHandlerCallback (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\middlewares.js:34:12)
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:265:41)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

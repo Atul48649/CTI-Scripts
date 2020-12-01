@@ -1,10 +1,10 @@
-const {
+const{
     BASE_URL
 } = require('./general');
 
-const {
+const{
     LOGINWITHPIN
-} = require('./general')
+} = require('./route');
 
 
 exports.loginWithPinScreen = {

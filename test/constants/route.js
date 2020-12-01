@@ -1,9 +1,12 @@
-exports.test1 = {
-    LOGIN : "/login",
-    SETPIN : "/set/pin",
-    LOGINWITHPIN : "/sign/pin",
-    STUDENTDASHBOARD : "/student/dashboard"
+const LOGIN = "/login";
+const SETPIN = "/set/pin";
+const LOGINWITHPIN = "/sign/pin";
+const STUDENTDASHBOARD = "/student/dashboard";
+
+module.exports = {
+    LOGIN,
+    SETPIN,
+    LOGINWITHPIN,
+    STUDENTDASHBOARD
 }
-
-
 

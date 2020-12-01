@@ -1,13 +1,10 @@
-const {
-    test
+const{
+    BASE_URL
 } = require('./general');
-const {
-    test1
-} = require('./route')
 
-// import { BASE_URL, LOGIN } from "./general";
-const { BASE_URL } = test;
-const { SETPIN } = test1;
+const{
+    SETPIN
+} = require('./route');
 
 
 exports.setPinScreen = {
@@ -16,5 +13,5 @@ exports.setPinScreen = {
     mismatchedConfirmPin : "4321",
     errorTextDifferentPin : "pin and confirm pin should be same.",
     title : "CTI",
-    setPinUrl : BASE_URL.concat(SETPIN),
+    setPinUrl : `${BASE_URL}${SETPIN}`,
 }

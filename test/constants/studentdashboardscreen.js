@@ -1,10 +1,10 @@
-const {
+const{
     BASE_URL
 } = require('./general');
 
-const {
+const{
     STUDENTDASHBOARD
-} = require('./general');
+} = require('./route');
 
 exports.studentDashboardScreen = {
     title : "CTI",
