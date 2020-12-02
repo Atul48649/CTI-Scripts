@@ -11,7 +11,7 @@ exports.loginScreen = {
     password : "12345",
     wrongUsername : "jacobrams@",
     wrongPassword : "111111111",
-    usernamePinCreatedEarlier : "jacobrams2001@gmail.com",
+    usernamePinCreatedEarlier : "joewilton3@gmail.com",
     usernamePinNotCreatedEarlier : "harryerbacher@gmail.com",
     title : "CTI",
     errorTextUsername : "Wrong login id format, either it should be a valid phone number or an email Id.",
