@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606997703027' stop='1606997715990'>
+    <name>Login with valid login credentials and then sign out when Pin is not generated earlier - </name>
+    <title>Login with valid login credentials and then sign out when Pin is not generated earlier - </title>
+    <test-cases>
+        <test-case start='1606997703027' status='passed' stop='1606997704928'>
+            <name>Student should get Login and Set Pin Page should get displayed</name>
+            <title>Student should get Login and Set Pin Page should get displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606997704929' status='passed' stop='1606997705805'>
+            <name>Creating Pin</name>
+            <title>Creating Pin</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606997705805' status='failed' stop='1606997715989'>
+            <name>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</name>
+            <title>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect window to have url
+                
+                Expected: "http://cti-techoon.azurewebsites.net/sign/pin"
+                Received: "http://cti-techoon.azurewebsites.net/set/pin"</message>
+                <stack-trace>Error: Expect window to have url
+                
+                Expected: "http://cti-techoon.azurewebsites.net/sign/pin"
+                Received: "http://cti-techoon.azurewebsites.net/set/pin"
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:125:29)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

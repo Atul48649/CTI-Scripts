@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606996721489' stop='1606996724717'>
+    <name>Login with valid login credentials and then sign out when Pin is already generated earlier - </name>
+    <title>Login with valid login credentials and then sign out when Pin is already generated earlier - </title>
+    <test-cases>
+        <test-case start='1606996721490' status='passed' stop='1606996723859'>
+            <name>Student should get Login and Login With Pin Page should get displayed</name>
+            <title>Student should get Login and Login With Pin Page should get displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606996723860' status='passed' stop='1606996724715'>
+            <name>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</name>
+            <title>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606997436671' stop='1606997459110'>
+    <name>Login with valid login credentials and then sign out when Pin is not generated earlier - </name>
+    <title>Login with valid login credentials and then sign out when Pin is not generated earlier - </title>
+    <test-cases>
+        <test-case start='1606997436671' status='failed' stop='1606997448009'>
+            <name>Student should get Login and Set Pin Page should get displayed</name>
+            <title>Student should get Login and Set Pin Page should get displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect window to have url
+                
+                Expected: "http://cti-techoon.azurewebsites.net/set/pin"
+                Received: "http://cti-techoon.azurewebsites.net/sign/pin"</message>
+                <stack-trace>Error: Expect window to have url
+                
+                Expected: "http://cti-techoon.azurewebsites.net/set/pin"
+                Received: "http://cti-techoon.azurewebsites.net/sign/pin"
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:98:29)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1606997448009' status='broken' stop='1606997458298'>
+            <name>Creating Pin</name>
+            <title>Creating Pin</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call addValue on element with selector "#confirmPin" because element wasn't found</message>
+                <stack-trace>Error: Can't call addValue on element with selector "#confirmPin" because element wasn't found
+                    at Object.implicitWait [as default] (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\utils\implicitWait.js:26:19)
+                    at Element.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Element.wrapCommandFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at Element.elementErrorHandlerCallback (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\middlewares.js:34:12)
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:104:40)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1606997458298' status='passed' stop='1606997459109'>
+            <name>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</name>
+            <title>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606997959169' stop='1606997970547'>
+    <name>throw error message for password field - </name>
+    <title>throw error message for password field - </title>
+    <test-cases>
+        <test-case start='1606997959169' status='failed' stop='1606997970546'>
+            <name>Should throw error message for Password field</name>
+            <title>Should throw error message for Password field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect  to have text
+                
+                Expected: "You have entered incorrect password."
+                Received: undefined</message>
+                <stack-trace>Error: Expect  to have text
+                
+                Expected: "You have entered incorrect password."
+                Received: undefined
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:73:48)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

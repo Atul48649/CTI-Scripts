@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606994796758' stop='1606994798018'>
+    <name>Entered username should get cleared and password should get visible - </name>
+    <title>Entered username should get cleared and password should get visible - </title>
+    <test-cases>
+        <test-case start='1606994796758' status='broken' stop='1606994798017'>
+            <name>Entered Email Id/ Phone Number in the input field should get cleared</name>
+            <title>Entered Email Id/ Phone Number in the input field should get cleared</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=86.0.4240.198)</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=86.0.4240.198)
+                    at Object.getErrorFromResponseBody (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriver\build\utils.js:94:12)
+                    at WebDriverRequest._request (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriver\build\request.js:133:31)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\middlewares.js:17:32)
+                    at async Element.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:70:25)
+                    at Element.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Element.wrapCommandFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at Element.elementErrorHandlerCallback (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\middlewares.js:34:12)
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:49:33)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

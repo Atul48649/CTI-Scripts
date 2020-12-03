@@ -23,33 +23,33 @@ const general = require('../constants/general');
  
 const LoginCopyPage = {
 
-    itVerifyTitle : function(){
+    itVerifyTitle : () => {
         it('Should verify the title of the page', () => {
             expect(browser).toHaveTitle(loginScreen.title);
         });
     },
-    itCtiLogoShouldBeDisplayedInLoginPage : function(){
+    itCtiLogoShouldBeDisplayedInLoginPage : () => {
         it('CTI Logo should be displayed in Login page', () => {
             expect(LoginPage.ctiLogo).toBeVisible()
         });
     },
-    itDisplayLoginTextInLoginPage : function(){
+    itDisplayLoginTextInLoginPage :  () => {
         it('Logo should be displayed', () => {
             expect(LoginPage.ctiLogo).toBeVisible()
         });
     },
-    itLoginbtnDisabled : function(){
+    itLoginbtnDisabled :  () => {
         it('Enter Pin button should be disabled', () => {
             LoginPage.loginBtn.waitForClickable({ reverse: true });
         });
     },
-    itUsernameFieldGetCleared : function()  {
+    itUsernameFieldGetCleared :  () =>   {
         it('Entered Email Id/ Phone Number in the input field should get cleared', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
             LoginPage.crossIcon.click();
         });
     },
-    itPasswordGetVisible : function(){
+    itPasswordGetVisible :  () => {
         it('Entered Password should get visible', () => {
             expect(LoginPage.passwordInput).toHaveAttribute('type', 'password');
             LoginPage.passwordInput.addValue(loginScreen.password);
@@ -57,7 +57,7 @@ const LoginCopyPage = {
             expect(LoginPage.passwordInput).toHaveAttribute('type', 'text');
         });
     },
-    itEnterInvalidUsernameValidPassword : function(){
+    itEnterInvalidUsernameValidPassword :  () => {
         it('Should throw error message for Email Id/Phone Number field', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.wrongUsername);
             LoginPage.passwordInput.addValue(loginScreen.password);
@@ -65,7 +65,7 @@ const LoginCopyPage = {
             expect(LoginPage.errorMsgEmailIdOrPhoneNumber).toHaveText(loginScreen.errorTextUsername);
         });
     },
-    itEnterValidUsernameInvalidPassword : function(){
+    itEnterValidUsernameInvalidPassword :  () => {
         it('Should throw error message for Password field', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
             LoginPage.passwordInput.addValue(loginScreen.wrongPassword);
@@ -73,7 +73,7 @@ const LoginCopyPage = {
             expect(LoginPage.errorMsgPassword).toHaveText(loginScreen.errorTextPassword);
         });
     },
-    itInvalidUsernameInvalidPassword : function(){
+    itInvalidUsernameInvalidPassword :  () => {
         it('Should throw error message for both Email Id/Phone Number and Password field', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.wrongUsername);
             LoginPage.passwordInput.addValue(loginScreen.wrongPassword);
@@ -82,7 +82,7 @@ const LoginCopyPage = {
             expect(LoginPage.errorMsgPassword).toHaveText(loginScreen.errorTextPassword);
         });
     },
-    itEnterValidLoginCredentialsWhenPinCreatedEarlier : function(){
+    itEnterValidLoginCredentialsWhenPinCreatedEarlier :  () => {
         it('Student should get Login and Login With Pin Page should get displayed', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinCreatedEarlier);
             LoginPage.passwordInput.addValue(loginScreen.password);
@@ -90,7 +90,7 @@ const LoginCopyPage = {
             expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl);
         });
     },
-    itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier : function(){
+    itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier :  () => {
         it('Student should get Login and Set Pin Page should get displayed', () => {
             LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
             LoginPage.passwordInput.addValue(loginScreen.password);
@@ -98,7 +98,7 @@ const LoginCopyPage = {
             expect(browser).toHaveUrl(setPinScreen.setPinUrl);
         });
     },
-    itEnterSamePinInPinAndConfirmPin : function(){
+    itEnterSamePinInPinAndConfirmPin :  () => {
         it('Creating Pin', () => {
             SetPinPage.pinInput.addValue(setPinScreen.pin);
             SetPinPage.confirmPinInput.addValue(setPinScreen.confirmPin);
@@ -106,7 +106,7 @@ const LoginCopyPage = {
             expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl);
         });
     },
-    itEnterDifferentPinInPinAndConfirmPin : function(){
+    itEnterDifferentPinInPinAndConfirmPin :  () => {
         it('Should throw error message when entered pin in Pin and Confirm Pin does not matches', () => {
             SetPinPage.pinInput.addValue(setPinScreen.pin);
             SetPinPage.confirmPinInput.addValue(setPinScreen.mismatchedConfirmPin);
@@ -114,116 +114,73 @@ const LoginCopyPage = {
             expect(SetPinPage.errorMessageDifferentPin).toHaveText(setPinScreen.errorTextDifferentPin);
         });
     },
-    itSkipSettingPin : function(){
+    itSkipSettingPin :  () => {
         it('While Login Skip setting Pin', () => {
             SetPinPage.skip.click();
             expect(browser).toHaveUrl(studentDashboardScreen.studentDashboardUrl);
         });
     },
-    itEnterValidPinWhileLoginWithPinWhenPinIsNotCreatedEarlier : function(){
-        it('Should get Login With Pin Login>Set Pin>Login With Pin and should display Student Dashboard', () => {
+    itEnterValidPinWhileLoginWithPin :  () => {
+        it('Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button', () => {
+            expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl);
             LoginWithPinPage.pinInput.addValue(loginWithPinScreen.pin);
             LoginWithPinPage.verifyPinBtn.click();
             expect(browser).toHaveUrl(studentDashboardScreen.studentDashboardUrl);
         });
     },
-    itEnterInvalidPinWhileLoginWithPinWhenPinIsNotCreatedEarlier : function(){
-        it('Should throw error message when entered pin in Pin field does not matches to the setted pin', () => {
+    itEnterInvalidPinWhileLoginWithPin :  () => {
+        it('Should throw error message while entering invalid Pin and clicking on VERIFY PIN button', () => {
             LoginWithPinPage.pinInput.addValue(loginWithPinScreen.wrongPin);
             LoginWithPinPage.verifyPinBtn.click();
             expect(LoginWithPinPage.errorMessageLoginWithPin).toHaveText(loginWithPinScreen.errorTextPin);
         });
     },
-    itEnterValidPinWhileLoginWithPinWhenPinCreatedEarlier : function(){// TODO:This one might gonna removed because of upper test case
-        it('Student Dashboard should get displayed while entering valid pin and clicking on VERIFY PIN button', () => {
-            LoginWithPinPage.pinInput.addValue(loginWithPinScreen.pin);
-            LoginWithPinPage.verifyPinBtn.click();
-            expect(browser).toHaveUrl(studentDashboardScreen.studentDashboardUrl);
-        });
-    },
-    itEnterInvalidPinWhileLoginWithPinWhenPinCreatedEarlier : function(){// TODO:This one might gonna removed because of upper test case
-        it('Should throw error message while entering invalid pin and clicking on VERIFY PIN button(Pin setted earlier)', () => {
-            LoginWithPinPage.pinInput.addValue(loginWithPinScreen.wrongPin);
-            LoginWithPinPage.verifyPinBtn.click();
-            expect(LoginWithPinPage.errorMessageLoginWithPin).toHaveText(loginWithPinScreen.errorTextPin);
-        });
-    },
-    itStudentGetSignOutWhenPinWhenPinIsNotCreatedEarlier : function(){
-        it('Student Should get Sign Out Login>Set Pin>Login With Pin>Student Dashboard and Login page should get displayed', () => {
-            StudentDashboardPage.signOutBtn.click();
-            expect(browser).toHaveUrl(loginScreen.loginUrl);
-        });
-    },
-    itStudentGetSignOutWhenPinWhenPinCreatedEarlier : function(){
-        it('Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed', () => {
-            StudentDashboardPage.signOutBtn.click();
-            expect(browser).toHaveUrl(loginScreen.loginUrl);
-        });
-    },
-    itStudentGetSignOutWhenSkipCreatingPin : function(){
-        it('Student Should get Sign Out Login>Set Pin(SKIP)>Student Dashboard and Login page should get displayed', () => {
+    itStudentGetSignOut :  () => {
+        it('Student Should get Signed Out', () => {
             StudentDashboardPage.signOutBtn.click();
             expect(browser).toHaveUrl(general.AFTERSIGNOUTNAVIGATEDURL);
         });
     },
     // TODO : Feature isn't working yet
-    itClickOnForgotPassword : function(){
+    itClickOnForgotPassword :  () => {
         it('forgot password should get clicked', () => {
             LoginPage.forgotPassword.click();
             expect(browser).toHaveUrl(loginScreen.resettingPasswordUrl);
         });
     },
     // ============ SET PIN=============
-    itVerifyTitleInSetPinPage : function(){
+    itVerifyTitleInSetPinPage :  () => {
         it('Should verify the title', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             expect(browser).toHaveTitle(setPinScreen.title);
         });
     },
-    itCtiLogoShouldBeDisplayedInSetPinPage : function(){
+    itCtiLogoShouldBeDisplayedInSetPinPage :  () => {
         it('Logo should be displayed', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             expect(SetPinPage.ctiLogo).toBeVisible()
         });
     },
-    itDisplaySetPinTextInSetPinPage : function(){
+    itDisplaySetPinTextInSetPinPage :  () => {
         it('Should display Set Pin text on the screen', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             expect(SetPinPage.setpinText).toBeDisplayed()
         });
     },
     itDisplay2StepVerificationTextInSetPinPage : () =>{
         it('Should display Set Pin text on the screen', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             expect(SetPinPage.twoStepVerificationText).toBeDisplayed()
         });
     },
-    itDisplay2StepVerificationParagraphTextInSetPinPage : function(){
+    itDisplay2StepVerificationParagraphTextInSetPinPage :  () => {
         it('Should display Set Pin text on the screen', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.usernamePinNotCreatedEarlier);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             expect(SetPinPage.paragraphText).toBeDisplayed();
         });
     },
-    itPinAndConfirmPinGetVisible : function(){
+    itEnterPinbtnDisabled :  () => {
+        it('Enter Pin button should be disabled', () => {
+            SetPinPage.enterPinBtn.waitForClickable({ reverse: true });
+        });
+    },
+    itPinAndConfirmPinGetVisible :  () => {
         it('Entered Pin should get visible', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
             expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
             expect(SetPinPage.pinInput).toHaveAttribute('type', 'password');
             SetPinPage.pinInput.addValue(loginScreen.password);
@@ -235,65 +192,35 @@ const LoginCopyPage = {
             expect(SetPinPage.confirmPinInput).toHaveAttribute('type', 'text');
         });
     },
-    itEnterPinbtnDisabled : function(){
-        it('Enter Pin button should be disabled', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
-            SetPinPage.enterPinBtn.waitForClickable({ reverse: true });
-        });
-    },
     // ============ LOGIN WITH PIN =============
-    itVerifyTitleInLoginWithPinPage : function(){
+    itVerifyTitleInLoginWithPinPage :  () => {
         it('Should verify the title', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl); 
             expect(browser).toHaveTitle('CTI');
         });
     },
-    itCtiLogoShouldBeDisplayedInLoginWithPinPage : function(){
+    itCtiLogoShouldBeDisplayedInLoginWithPinPage :  () => {
         it('Logo should be displayed', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl); 
             expect(LoginWithPinPage.ctiLogo).toBeVisible();
         });
     },
-    itDisplayLoginWithPinTextInLoginWithPinPage : function(){
+    itDisplayLoginWithPinTextInLoginWithPinPage :  () => {
         it('Should display Set Pin text on the screen', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl); 
             expect(LoginWithPinPage.loginWithPinText).toBeDisplayed();
         });
     },
-    itPinGetVisibleInLoginWithPinPage : function(){
-        it('Entered Pin should get visible', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl); 
-            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'password');
-            LoginWithPinPage.pinInput.addValue(loginScreen.password);
-            LoginWithPinPage.eyeIcon.click();
-            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'text');
-        });
-    },
-    itVerifybtnDisabled : function(){
+    itVerifybtnDisabled : () => {
         it('Verify Pin button should be disabled', () => {
-            // LoginPage.emailOrPhoneInput.addValue(loginScreen.username);
-            // LoginPage.passwordInput.addValue(loginScreen.password);
-            // LoginPage.loginBtn.click();
-            // expect(browser).toHaveUrl(loginWithPinScreen.loginWithPinUrl); 
             LoginWithPinPage.verifyPinBtn.waitForClickable({ reverse: true });
         });
     },
-
+    itPinGetVisibleInLoginWithPinPage :  () => {
+        it('Entered Pin should get visible', () => {
+            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'password');
+            LoginWithPinPage.pinInput.addValue(loginScreen.password);
+            LoginWithPinPage.pinEyeIcon.click();
+            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'text');
+        });
+    },
 }
 
 module.exports = LoginCopyPage;

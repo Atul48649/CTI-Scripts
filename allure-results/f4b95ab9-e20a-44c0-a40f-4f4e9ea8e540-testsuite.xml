@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606997561788' stop='1606997569326'>
+    <name>Login with valid login credentials and then sign out when Pin is not generated earlier - </name>
+    <title>Login with valid login credentials and then sign out when Pin is not generated earlier - </title>
+    <test-cases>
+        <test-case start='1606997561788' status='passed' stop='1606997564109'>
+            <name>Student should get Login and Set Pin Page should get displayed</name>
+            <title>Student should get Login and Set Pin Page should get displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606997564109' status='passed' stop='1606997564936'>
+            <name>Creating Pin</name>
+            <title>Creating Pin</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1606997564937' status='broken' stop='1606997569326'>
+            <name>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</name>
+            <title>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.198'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button type="submit" class="btn bg-active text-white mt-4 login-btn btn-disabled disabled">...&lt;/button> is not clickable at point (959, 485). Other element would receive the click: &lt;form class="form-width-inherit">...&lt;/form>
+                  (Session info: chrome=86.0.4240.198)</message>
+                <stack-trace>element click intercepted: Element &lt;button type="submit" class="btn bg-active text-white mt-4 login-btn btn-disabled disabled">...&lt;/button> is not clickable at point (959, 485). Other element would receive the click: &lt;form class="form-width-inherit">...&lt;/form>
+                  (Session info: chrome=86.0.4240.198)
+                    at Object.getErrorFromResponseBody (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriver\build\utils.js:94:12)
+                    at WebDriverRequest._request (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriver\build\request.js:133:31)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\middlewares.js:17:32)
+                    at async Element.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:70:25)
+                    at Element.runCommandWithHooks (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Element.wrapCommandFn (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at Element.elementErrorHandlerCallback (C:\Users\Atul Kumar\Desktop\CTI\node_modules\webdriverio\build\middlewares.js:34:12)
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\CTI\test\pages\logincopy.page.js:126:43)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\CTI\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
