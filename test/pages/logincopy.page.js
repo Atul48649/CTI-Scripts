@@ -158,7 +158,6 @@ const LoginCopyPage = {
         it('Student Should get Sign Out Login>Login With Pin>Student Dashboard and Login page should get displayed', () => {
             StudentDashboardPage.signOutBtn.click();
             expect(browser).toHaveUrl(loginScreen.loginUrl);
-            // expect(browser).toHaveUrl(general.BASE_URL);// TODO : NEEDS TO BE DELETED
         });
     },
     itStudentGetSignOutWhenSkipCreatingPin : function(){
