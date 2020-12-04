@@ -224,11 +224,3 @@ const LoginCopyPage = {
 }
 
 module.exports = LoginCopyPage;
-
-
-// export const itUsernameFieldGetCleared = () => {
-//     it('Entered Email Id/ Phone Number in the input field should get cleared', () => {
-//         LoginPage.emailOrPhoneInput.addValue(loginCredentials.emailOrMobile);
-//         LoginPage.crossIcon.click();
-//     });
-// }
