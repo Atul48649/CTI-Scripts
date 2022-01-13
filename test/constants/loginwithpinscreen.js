@@ -8,9 +8,9 @@ const{
 
 
 exports.loginWithPinScreen = {
-    pin : "1234",
-    wrongPin : "4321",
+    pin : "123",
+    wrongPin : "321",
     errorTextPin : "Wrong Pin.",
-    title : "CTI",
+    title : "CTI App",
     loginWithPinUrl : `${BASE_URL}${LOGINWITHPIN}`,
 }

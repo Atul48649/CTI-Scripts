@@ -1,8 +1,9 @@
+const { BASE_URL } = require('../constants/general');
 const Page = require('./page');
 
 class LoginPage extends Page{
     open(){
-        super.open('http://cti-techoon.azurewebsites.net/');
+        super.open(BASE_URL);
     }
     get ctiLogo(){
         return $("//img[@alt='CTI logo']");
@@ -31,7 +32,7 @@ class LoginPage extends Page{
         return $('#remember_me');
     }
     get loginBtn(){
-        return $('.login-btn');
+        return $('button[type="submit"]');
     }
     get errorMsgEmailIdOrPhoneNumber(){
         return $('#emailHelp');

@@ -16,13 +16,20 @@
 const Page = require('../pages/page')
 const Login = require('../specs/login');
 const LoginPage = require('../pages/login.page')
+const SetPin = require('../specs/setpin')
+const SetPinPage = require('../pages/setpin.page')
+const VerifyPin = require('../specs/loginwithpin')
+const VerifyPinPage = require('../pages/loginwithpin.page')
 const LoginWithPinPage = require('../pages/loginwithpin.page')
 
-const openPage= (page) => {
-    beforeEach(() => {
+const openPage = (page) => {
+    // beforeEach(() => {
+    before(() => {
         page.open();
     });
 }
+
+// ======= LOGIN =======
 
 // const S_LoginUI = ()=>{
 //     openPage(LoginPage);
@@ -31,45 +38,55 @@ const openPage= (page) => {
 //     Login.itDisplayLoginTextInLoginPage();
 //     Login.itLoginbtnDisabled();
 // }
-// describe('Fixed things(texts,logo,title etc) present in the Login Page', S_LoginUI);
+// describe('Title, CTI Logo & Login Text should be present and Login Button should be disabled in the Login Page', S_LoginUI);
 
-// const S_SetPinUI = ()=> {
+// const suite4 = () => {
+//     openPage(LoginPage);
+//     Login.itUsernameFieldGetCleared();
+// };
+// describe('Entered username should get cleared - ',suite4);
+
+// const suite5 = () => {
+//     openPage(LoginPage);
+//     Login.itPasswordGetVisible();
+// };
+// describe('Entered password should get visible - ',suite5);
+
+// ======= ENTER PIN =======
+
+// const S_SetPinUI = () => {
 //     openPage(LoginPage);
 //     Login.itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier();
-//     Login.itVerifyTitleInSetPinPage();
-//     Login.itCtiLogoShouldBeDisplayedInSetPinPage(); 
-//     Login.itDisplaySetPinTextInSetPinPage();
-//     Login.itDisplay2StepVerificationTextInSetPinPage();
-//     Login.itDisplay2StepVerificationParagraphTextInSetPinPage();
-//     Login.itEnterPinbtnDisabled();
+
+//     SetPin.itVerifyTitleInSetPinPage();
+//     SetPin.itCtiLogoShouldBeDisplayedInSetPinPage();
+//     SetPin.itDisplaySetPinTextInSetPinPage();
+//     SetPin.itDisplay2StepVerificationTextInSetPinPage();
+//     SetPin.itDisplay2StepVerificationParagraphTextInSetPinPage();
+//     SetPin.itEnterPinbtnDisabled();
 // }
 // describe('Fixed things(texts,logo,title etc) present in the Set Pin Page - ', S_SetPinUI);
+
+const S_ShowPinAndConfirmPin = () => {
+    openPage(LoginPage);
+    Login.itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier();
+    SetPin.itPinAndConfirmPinGetVisible();
+};
+describe('Pin and Confirm Pin should get visible(ENTER PIN) - ',S_ShowPinAndConfirmPin);
+
+// ======= VERIFY PIN =======
 
 // const S_LoginWithPinUI = ()=> {
 //     openPage(LoginPage);
 //     Login.itEnterValidLoginCredentialsWhenPinCreatedEarlier();
-//     Login.itVerifyTitleInLoginWithPinPage();
-//     Login.itCtiLogoShouldBeDisplayedInLoginWithPinPage();
-//     Login.itDisplayLoginWithPinTextInLoginWithPinPage();
-//     Login.itVerifybtnDisabled();
+//     VerifyPin.itVerifyTitleInLoginWithPinPage();
+//     VerifyPin.itCtiLogoShouldBeDisplayedInLoginWithPinPage();
+//     VerifyPin.itDisplayLoginWithPinTextInLoginWithPinPage();
+//     VerifyPin.itVerifybtnDisabled();
 // }
 // describe('Fixed things(texts,logo,title etc) present in the Login With Pin Page', S_LoginWithPinUI);
 
-const suite4 = () => {
-    openPage(LoginPage);
-    Login.itUsernameFieldGetCleared();
-    Login.itPasswordGetVisible();
-};
-describe('Entered username should get cleared and password should get visible - ',suite4);
-
-// const S_ShowPinAndConfirmPin = () => { 
-//     openPage(LoginPage);
-//     Login.itEnterValidLoginCredentialsWhenPinIsNotCreatedEarlier();
-//     Login.itPinAndConfirmPinGetVisible();
-// };
-// describe('Pin and Confirm Pin should get visible - ',S_ShowPinAndConfirmPin);
-
-// const S_ShowPin = () => { 
+// const S_ShowPin = () => {
 //     openPage(LoginPage);
 //     Login.itEnterValidLoginCredentialsWhenPinCreatedEarlier();
 //     Login.itPinGetVisibleInLoginWithPinPage();

@@ -1,5 +1,5 @@
-const BASE_URL = "http://cti-techoon.azurewebsites.net";
-const AFTERSIGNOUTNAVIGATEDURL = "http://cti-techoon.azurewebsites.net/"
+const BASE_URL = "http://localhost:3000";
+const AFTERSIGNOUTNAVIGATEDURL = "http://localhost:3000/login"
 
 module.exports = { 
     BASE_URL,

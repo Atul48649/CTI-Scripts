@@ -17,7 +17,8 @@ class LoginWithPinPage extends Page {
         return $('#pinHelp');
     }
     get loginWithPinText(){
-        return $('h3=Login with Pin');
+        return $('h3=Verify Pin');
+        
     }
 }
 

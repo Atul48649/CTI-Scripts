@@ -34,8 +34,9 @@ const Login = {
         });
     },
     itDisplayLoginTextInLoginPage :  () => {
-        it('Logo should be displayed', () => {
-            expect(LoginPage.ctiLogo).toBeVisible()
+        it('Login text should be displayed', () => {
+            expect(LoginPage.loginText).toBeVisible();
+            expect(LoginPage.loginText).toHaveText('Login');
         });
     },
     itLoginbtnDisabled :  () => {
@@ -147,79 +148,6 @@ const Login = {
         it('forgot password should get clicked', () => {
             LoginPage.forgotPassword.click();
             expect(browser).toHaveUrl(loginScreen.resettingPasswordUrl);
-        });
-    },
-    // ============ SET PIN=============
-    itVerifyTitleInSetPinPage :  () => {
-        it('Should verify the title', () => {
-            expect(browser).toHaveTitle(setPinScreen.title);
-        });
-    },
-    itCtiLogoShouldBeDisplayedInSetPinPage :  () => {
-        it('Logo should be displayed', () => {
-            expect(SetPinPage.ctiLogo).toBeVisible()
-        });
-    },
-    itDisplaySetPinTextInSetPinPage :  () => {
-        it('Should display Set Pin text on the screen', () => {
-            expect(SetPinPage.setpinText).toBeDisplayed()
-        });
-    },
-    itDisplay2StepVerificationTextInSetPinPage : () =>{
-        it('Should display Set Pin text on the screen', () => {
-            expect(SetPinPage.twoStepVerificationText).toBeDisplayed()
-        });
-    },
-    itDisplay2StepVerificationParagraphTextInSetPinPage :  () => {
-        it('Should display Set Pin text on the screen', () => {
-            expect(SetPinPage.paragraphText).toBeDisplayed();
-        });
-    },
-    itEnterPinbtnDisabled :  () => {
-        it('Enter Pin button should be disabled', () => {
-            SetPinPage.enterPinBtn.waitForClickable({ reverse: true });
-        });
-    },
-    itPinAndConfirmPinGetVisible :  () => {
-        it('Entered Pin should get visible', () => {
-            expect(browser).toHaveUrl(setPinScreen.setPinUrl); 
-            expect(SetPinPage.pinInput).toHaveAttribute('type', 'password');
-            SetPinPage.pinInput.addValue(loginScreen.password);
-            SetPinPage.pinEyeIcon.click();
-            expect(SetPinPage.pinInput).toHaveAttribute('type', 'text');
-            expect(SetPinPage.confirmPinInput).toHaveAttribute('type', 'password');
-            SetPinPage.confirmPinInput.addValue(loginScreen.password);
-            SetPinPage.confirmPinEyeIcon.click();
-            expect(SetPinPage.confirmPinInput).toHaveAttribute('type', 'text');
-        });
-    },
-    // ============ LOGIN WITH PIN =============
-    itVerifyTitleInLoginWithPinPage :  () => {
-        it('Should verify the title', () => {
-            expect(browser).toHaveTitle('CTI');
-        });
-    },
-    itCtiLogoShouldBeDisplayedInLoginWithPinPage :  () => {
-        it('Logo should be displayed', () => {
-            expect(LoginWithPinPage.ctiLogo).toBeVisible();
-        });
-    },
-    itDisplayLoginWithPinTextInLoginWithPinPage :  () => {
-        it('Should display Set Pin text on the screen', () => {
-            expect(LoginWithPinPage.loginWithPinText).toBeDisplayed();
-        });
-    },
-    itVerifybtnDisabled : () => {
-        it('Verify Pin button should be disabled', () => {
-            LoginWithPinPage.verifyPinBtn.waitForClickable({ reverse: true });
-        });
-    },
-    itPinGetVisibleInLoginWithPinPage :  () => {
-        it('Entered Pin should get visible', () => {
-            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'password');
-            LoginWithPinPage.pinInput.addValue(loginScreen.password);
-            LoginWithPinPage.pinEyeIcon.click();
-            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'text');
         });
     },
 }

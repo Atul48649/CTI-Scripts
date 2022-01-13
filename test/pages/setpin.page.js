@@ -8,7 +8,7 @@ class SetPinPage extends Page{
         return $("//img[@alt='CTI logo']");
     }
     get setpinText(){
-        return $('h3=Set Pin');
+        return $('h3=Enter Pin');
     }
     get twoStepVerificationText(){
         return $('h5=2 step verification');
@@ -29,13 +29,13 @@ class SetPinPage extends Page{
         return $("//*[@id='root']/div/div/div/div/div[2]/form/div[2]/span[2]/i");
     }
     get enterPinBtn(){
-        return $('.login-btn');
+        return $("button[type='submit']");
     }
     get skip(){
         return $("//u[contains(text(),'Skip')]");
     }
     get errorMessageDifferentPin(){
-        return $('#confirmPasswordHelp');
+        return $("//span[contains(text(), 'Pin is not matching!')]");
     }
 }
 

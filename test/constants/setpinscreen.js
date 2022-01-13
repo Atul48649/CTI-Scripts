@@ -6,12 +6,11 @@ const{
     SETPIN
 } = require('./route');
 
-
 exports.setPinScreen = {
     pin : "1234",
     confirmPin : "1234",
     mismatchedConfirmPin : "4321",
     errorTextDifferentPin : "pin and confirm pin should be same.",
-    title : "CTI",
+    title : "CTI App",
     setPinUrl : `${BASE_URL}${SETPIN}`,
 }

@@ -1,3 +1,5 @@
+
+/*
 const LoginWithPinPage = require('../pages/loginwithpin.page');
 
 describe('Login With Pin Page', () => {
@@ -35,3 +37,41 @@ describe('Login With Pin Page', () => {
     });
 
 });
+*/
+
+const {loginWithPinScreen} = require('../constants/loginwithpinscreen');
+
+const LoginWithPinPage = require('../pages/loginwithpin.page');
+
+const VerifyPin = {
+    itVerifyTitleInLoginWithPinPage :  () => {
+        it('Should verify the title', () => {
+            expect(browser).toHaveTitle(loginWithPinScreen.title);
+        });
+    },
+    itCtiLogoShouldBeDisplayedInLoginWithPinPage :  () => {
+        it('Logo should be displayed', () => {
+            expect(LoginWithPinPage.ctiLogo).toBeVisible();
+        });
+    },
+    itDisplayLoginWithPinTextInLoginWithPinPage :  () => {
+        it('Should display Set Pin text on the screen', () => {
+            expect(LoginWithPinPage.loginWithPinText).toBeDisplayed();
+        });
+    },
+    itVerifybtnDisabled : () => {
+        it('Verify Pin button should be disabled', () => {
+            LoginWithPinPage.verifyPinBtn.waitForClickable({ reverse: true });
+        });
+    },
+    itPinGetVisibleInLoginWithPinPage :  () => {
+        it('Entered Pin should get visible', () => {
+            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'password');
+            LoginWithPinPage.pinInput.addValue(loginScreen.password);
+            LoginWithPinPage.pinEyeIcon.click();
+            expect(LoginWithPinPage.pinInput).toHaveAttribute('type', 'text');
+        });
+    }
+}
+
+module.exports = VerifyPin;
