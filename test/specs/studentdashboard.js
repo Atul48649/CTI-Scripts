@@ -10,6 +10,12 @@ const StudentDashboard = {
         it('Alert icon and you have overdue activities text should be displayed', () => {
             
         });
+    },
+    itStudentGetSignOut :  () => {
+        it('Student Should get Signed Out', () => {
+            StudentDashboardPage.signOutBtn.click();
+            expect(browser).toHaveUrl(general.AFTERSIGNOUTNAVIGATEDURL);
+        });
     }
 }
 

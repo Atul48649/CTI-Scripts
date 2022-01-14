@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642154817577' stop='1642154831260'>
+    <name>Pin and Confirm Pin should get visible(ENTER PIN) - </name>
+    <title>Pin and Confirm Pin should get visible(ENTER PIN) - </title>
+    <test-cases>
+        <test-case start='1642154817577' status='passed' stop='1642154821200'>
+            <name>Student should get Login and Set Pin Page should get displayed</name>
+            <title>Student should get Login and Set Pin Page should get displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1642154821201' status='failed' stop='1642154831256'>
+            <name>Entered Pin should get visible</name>
+            <title>Entered Pin should get visible</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`#pin`) to have attribute type
+                
+                Expected: "password"
+                Received: "number"</message>
+                <stack-trace>Error: Expect $(`#pin`) to have attribute type
+                
+                Expected: "password"
+                Received: "number"
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\WFH\CTI\CTI-Scripts\test\specs\setpin.js:39:41)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\WFH\CTI\CTI-Scripts\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\WFH\CTI\CTI-Scripts\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

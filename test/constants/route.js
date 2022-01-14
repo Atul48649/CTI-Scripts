@@ -1,12 +1,12 @@
 const LOGIN = "/login";
 const SETPIN = "/set/pin";
-const LOGINWITHPIN = "/sign/pin";
+const VERIFYPIN = "/sign/pin";
 const STUDENTDASHBOARD = "/student/dashboard";
 
 module.exports = {
     LOGIN,
     SETPIN,
-    LOGINWITHPIN,
+    VERIFYPIN,
     STUDENTDASHBOARD
 }
 

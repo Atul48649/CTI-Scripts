@@ -3,14 +3,14 @@ const{
 } = require('./general');
 
 const{
-    LOGINWITHPIN
+    VERIFYPIN
 } = require('./route');
 
 
-exports.loginWithPinScreen = {
+exports.verifyPinScreen = {
     pin : "123",
     wrongPin : "321",
     errorTextPin : "Wrong Pin.",
     title : "CTI App",
-    loginWithPinUrl : `${BASE_URL}${LOGINWITHPIN}`,
+    verifyPinUrl : `${BASE_URL}${VERIFYPIN}`,
 }

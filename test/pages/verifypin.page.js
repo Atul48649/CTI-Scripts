@@ -1,6 +1,6 @@
 const Page = require('./page');
 
-class LoginWithPinPage extends Page {
+class VerifyPinPage extends Page {
     get pinInput(){
         return $('#pin');
     }
@@ -13,13 +13,13 @@ class LoginWithPinPage extends Page {
     get ctiLogo(){
         return $("//img[@alt='CTI logo']");
     }
-    get errorMessageLoginWithPin(){
+    get errorMessageVerifyPin(){
         return $('#pinHelp');
     }
-    get loginWithPinText(){
+    get verifyPinText(){
         return $('h3=Verify Pin');
         
     }
 }
 
-module.exports = new LoginWithPinPage();
+module.exports = new VerifyPinPage();

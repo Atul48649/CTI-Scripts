@@ -12,12 +12,12 @@
 
 const {loginScreen} = require('../constants/loginscreen');
 const {setPinScreen} = require('../constants/setpinscreen');
-const {loginWithPinScreen} = require('../constants/loginwithpinscreen');
+const {loginWithPinScreen} = require('../constants/verifypinscreen');
 const {studentDashboardScreen} = require('../constants/studentdashboardscreen');
 
 const LoginPage = require('../pages/login.page');
 const SetPinPage = require('../pages/setpin.page');
-const LoginWithPinPage = require('../pages/loginwithpin.page');
+const LoginWithPinPage = require('./verifypin.page');
 const StudentDashboardPage = require('../pages/studentdashboard.page');
 const general = require('../constants/general');
  

@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642157554934' stop='1642157557420'>
+    <name>Login with valid login credentials when Pin is already generated earlier - </name>
+    <title>Login with valid login credentials when Pin is already generated earlier - </title>
+    <test-cases>
+        <test-case start='1642157554934' status='passed' stop='1642157557312'>
+            <name>Student should get Login and Login With Pin Page should get displayed</name>
+            <title>Student should get Login and Login With Pin Page should get displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1642157557313' status='broken' stop='1642157557420'>
+            <name>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</name>
+            <title>Student Dashboard should get displayed while entering valid Pin and clicking on VERIFY PIN button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>studentDashboardScreen is not defined</message>
+                <stack-trace>ReferenceError: studentDashboardScreen is not defined
+                    at Context.&lt;anonymous> (C:\Users\Atul Kumar\Desktop\WFH\CTI\CTI-Scripts\test\specs\verifypin.js:81:39)
+                    at Context.executeSync (C:\Users\Atul Kumar\Desktop\WFH\CTI\CTI-Scripts\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\Atul Kumar\Desktop\WFH\CTI\CTI-Scripts\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
